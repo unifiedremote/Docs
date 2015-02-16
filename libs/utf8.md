@@ -122,11 +122,11 @@ print(utf8.indexof("This is a text string", "text")); -- 11
 
 
 
-### utf8.indexoflast( string, find )
+### utf8.lastindexof( string, find )
 Returns the last index of ``find`` in the ``string``.
 
 ````lua
-print(utf8.indexoflast("This is a text string", "t"));	-- 17
+print(utf8.lastindexof("This is a text string", "t"));	-- 17
 ````
 
 
