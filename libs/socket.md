@@ -1,14 +1,14 @@
 ﻿
 # Socket
-* [new](#socketnew)
-* [onconnect](#socketonconnect)
-* [ondata](#socketondata-data)
-* [onclose](#socketonclose)
-* [onerror](#socketonerror-err)
-* [connect](#socketconnect-host-port)
-* [connected](#socketconnected)
-* [write](#socketwrite-data)
-* [close](#socketclose)
+* [new](#socketnew-)
+* [onconnect](#socketonconnect-)
+* [ondata](#socketondata-data-)
+* [onclose](#socketonclose-)
+* [onerror](#socketonerror-err-)
+* [connect](#socketconnect-host-port-)
+* [connected](#socketconnected-)
+* [write](#socketwrite-data-)
+* [close](#socketclose-)
 
 
 
