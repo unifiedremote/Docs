@@ -32,14 +32,15 @@ local utf8 = require("utf8");
 All functions can be used as global functions
 
 ````lua
-utf8.contains("foo bar", "foo");
+print(utf8.replace("foo bar", "foo", "hello")); -- "hello bar"
 ````
 
 For best performance with large strings, create a UTF8 string instance and re-use it when possible. Note the instance (``str:``) syntax!
 
 ````lua
 local str = utf8.new("foo bar");
-str:contains("foo bar", "foo");
+str:replace("foo", "hello");
+print(str:raw()); -- "hello bar"
 ````
 
 
