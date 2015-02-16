@@ -1,6 +1,6 @@
 
 # COM
-* [luacom](#com-1)
+* [luacom](#luacom-1)
 * [luacom.CreateObject](#luacomcreateobject-id-)
 * [luacom.GetObject](#luacomgetobject-id-)
 * [Releasing](#releasing)
