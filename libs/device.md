@@ -1,7 +1,7 @@
 
 #Device
 * [device](#device-1)
-* [wol](#devicewol-)
+* [wol](#devicewol-mac-)
 * [irsend](#deviceirsend-code-)
 * [keyboard](#devicekeyboard-)
 * [mouse](#devicemouse-)
@@ -15,16 +15,26 @@
 ## device
 The ``device`` library provides actions that can be performed on the client device.
 
-	local dev = libs.device;
+````lua
+local dev = libs.device;
+````
 
 
 
-### device.wol
+### device.wol( [mac] )
 In most cases WOL (Wake On LAN) needs to be sent without being connected to a server (i.e if the server is sleeping and you wish to wake it up). Therefore WOL actions should be specified in the layout. See [Inline Actions](../concepts/layout.md) to learn more about this syntax.
 
 ````xml
 <layout>
 	<button text="WOL" onclick="@wol" />
+</layout>
+````
+
+If no ``mac`` is specified, then the last used server's mac will be used. Otherwise, the specified mac will be used.
+
+````xml
+<layout>
+	<button text="WOL" onclick="@wol,00:00:00:00:00:00:00:00" />
 </layout>
 ````
 
