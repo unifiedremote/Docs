@@ -16,7 +16,7 @@
 The ``device`` library provides actions that can be performed on the client device.
 
 ````lua
-local dev = libs.device;
+local dev = require("device");
 ````
 
 
