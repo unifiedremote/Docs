@@ -1,6 +1,6 @@
 
 # OS
-* [os](#os)
+* [os](#os-1)
 * [sleep](#ossleep-time-)
 * [open](#osopen-path-)
 * [openall](#osopenall-path-)
