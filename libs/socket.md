@@ -1,5 +1,6 @@
-﻿
+
 # Socket
+* [socket](#socket-)
 * [new](#socketnew-)
 * [onconnect](#socketonconnect-)
 * [ondata](#socketondata-data-)
@@ -29,7 +30,7 @@ s:connect("localhost", 1234);
 ```
 
 
-### socket.new( )
+## socket.new( )
 Creates a new socket.
 
 ```lua
@@ -38,7 +39,7 @@ local s = require("socket").new();
 
 
 
-### socket:onconnect( )
+## socket:onconnect( )
 Callback to invoke when connection is established.
 
 ```lua
@@ -50,7 +51,7 @@ end);
 
 
 
-### socket:ondata( data )
+## socket:ondata( data )
 Callback to invoke when raw ``data`` is received. Use a buffer for easy data handling.
 
 ```lua
@@ -67,7 +68,7 @@ end);
 
 
 
-### socket:onclose( )
+## socket:onclose( )
 Callback to invoke when connection is broken.
 
 ```lua
@@ -79,7 +80,7 @@ end);
 
 
 
-### socket:onerror( err )
+## socket:onerror( err )
 Callback to invoke when an error occurs.
 
 ```lua
@@ -92,7 +93,7 @@ s:connect("asdf", 1234);
 
 
 
-### socket:connect( host, port )
+## socket:connect( host, port )
 Connects to the specifed host and port. Invokes ``onconnect``.
 
 ```lua
@@ -102,7 +103,7 @@ s:connect("localhost", 1234);
 
 
 
-### socket:connected( )
+## socket:connected( )
 Checks if the socket is currently connected.
 
 ```lua
@@ -112,7 +113,7 @@ print(s:connected()); -- false
 
 
 
-### socket:write( data )
+## socket:write( data )
 Writes raw data to the socket. Use a buffer for easy data handling.
 
 ```lua
@@ -130,7 +131,7 @@ end);
 
 
 
-### socket:close( )
+## socket:close( )
 Closes the socket if it is connected. Invokes ``onclose``.
 
 ```lua
