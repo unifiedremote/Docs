@@ -2,24 +2,24 @@
 # Data
 * [data](#data-1)
 * [json](#json)
-	* [tojson](#data_tojson)
-	* [tojsonpretty](#data_tojsonpretty)
-	* [fromjson](#data_fromjson)
+	* [tojson](#datatojson-table-)
+	* [tojsonpretty](#datatojsonpretty-table-)
+	* [fromjson](#datafromjson-json-)
 * [xml](#xml)
-	* [fromxml](#data_fromxml)
+	* [fromxml](#datafromxml-xml-)
 * [base](#base)
-	* [tobase64](#data_tobase64)
-	* [frombase64](#data_frombase64)
-	* [tobase32](#data_frombase32)
-	* [frombase32](#data_frombase32)
+	* [tobase64](#datatobase64-data-)
+	* [frombase64](#datafrombase64-str-)
+	* [tobase32](#datafrombase32-data-)
+	* [frombase32](#datafrombase32-str-)
 * [time](#time)
-	* [sec2span](#data_sec2span)
-	* [span2sec](#data_span2sec)
-	* [timestamp](#)
+	* [sec2span](#datasec2span-seconds-)
+	* [span2sec](#dataspan2sec-span-)
+	* [timestamp](#datatimestamp-)
 * [security](#security)
-	* [nonce](#)
-	* [digest](#)
-	* [digesthex](#)
+	* [nonce](#datanonce-)
+	* [digest](#datadigest-name-data-)
+	* [digesthex](#datadigesthex-name-data-)
 
 
 
@@ -56,16 +56,16 @@ json = data.tojsonpretty(tbl);
 
 
 
-## xml
-
-
-
 ### data.fromjson( json )
 
 ````lua
 json = "{ \"foo\" = 123, \"bar\" = \"hello world\" }";
 tbl = data.fromjson(json);
 ````
+
+
+
+## xml
 
 
 
@@ -153,8 +153,7 @@ data = data.frombase32("...");
 Converts ``seconds`` to a time span string with the following format: [HH:]MM:SS.
 
 ````lua
-sec = 1234;
-span = data.sec2span(sec);
+print(data.sec2span(754)); -- 12:34
 ````
 
 
@@ -163,8 +162,7 @@ span = data.sec2span(sec);
 Converts a time span string to the number of seconds that it represents.
 
 ````lua
-span = "12:34";
-sec = data.span2sec(span);
+print(data.span2sec("12:34")); -- 754
 ````
 
 	
