@@ -44,7 +44,7 @@
 The ``buffer`` library provides a way to easily read and write binary data.
 
 	-- Create a new buffer
-	local buffer = libs.buffer.new();
+	local buffer = require("buffer").new();
 
 
 
@@ -56,7 +56,7 @@ Supported encodings: ``ascii``, ``latin1``, ``latin2``, ``latin9``,
 
 Supported byte orders: ``le``, ``be``, ``network``, ``native``.
 
-	local b1 = libs.buffer.new();
+	local b1 = require("buffer").new();
 	local b2 = libs.buffer.new("utf16");
 	local b3 = libs.buffer.new("utf8", "le");
 
@@ -65,7 +65,7 @@ Supported byte orders: ``le``, ``be``, ``network``, ``native``.
 ## buffer:length( )
 Returns the total length of the data in the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b.writebyte(123);
 	print(buffer:length()); -- 1
 
@@ -74,7 +74,7 @@ Returns the total length of the data in the buffer.
 ## buffer:available( )
 Returns the length of unread data in the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b.writebyte(123);
 	print(buffer.available()); -- 1
 	b.readbyte();
@@ -85,7 +85,7 @@ Returns the length of unread data in the buffer.
 ## buffer:position( )
 Returns the current position in the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writebyte(123);
 	print(b:position()); -- 0
 	b:readbyte();
@@ -96,7 +96,7 @@ Returns the current position in the buffer.
 ## buffer:at( pos )
 Returns the byte at the specified position (zero-index based).
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writestring("abc");
 	print(b:at(0));  --  3
 	print(b:at(2));  -- 'b' 98
@@ -106,7 +106,7 @@ Returns the byte at the specified position (zero-index based).
 ## buffer:tostring( )
 Returns a string representation of the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writebytes(12, 34, 56);
 	print(b:tostring()); -- [12,34,56]
 
@@ -115,7 +115,7 @@ Returns a string representation of the buffer.
 ## buffer:tohex( )
 Returns a string hex representation of the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writebytes(161, 178, 195);
 	print(b:tostring()); -- [A1,B2,C3]
 
@@ -124,7 +124,7 @@ Returns a string hex representation of the buffer.
 ## buffer:write( raw )
 Write raw data to buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:write("abc");
 	print(b:tostring()); -- [97,98,99]
 
@@ -133,10 +133,10 @@ Write raw data to buffer.
 ## buffer:writebuffer( buffer )
 Copies the data from another buffer.
 
-	local a = libs.buffer.new();
+	local a = require("buffer").new();
 	b:write("abc");
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writebuffer(a);
 	print(b:tostring()); -- [97,98,99]
 
@@ -154,7 +154,7 @@ Writes a string using the specified encoding (length-prefixed).
 ## buffer:writeline( str )
 Writes a raw line of text using the specified encoding (not length-prefixed).
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeline("foobar");
 	print(b:readline()); -- foobar
 
@@ -163,7 +163,7 @@ Writes a raw line of text using the specified encoding (not length-prefixed).
 ## buffer:writebyte( value )
 Writes a single byte to the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writebyte(123);
 	print(b:tostring()); -- [123]
 
@@ -172,7 +172,7 @@ Writes a single byte to the buffer.
 ## buffer:writebytes( value )
 Writes multiple bytes to the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writebytes(12, 34);
 	b:writebytes({ 56, 78 });
 	print(b:tostring()); -- [12,34,56,78]
@@ -182,7 +182,7 @@ Writes multiple bytes to the buffer.
 ## buffer:writeint8( value )
 Writes an 8-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint8(123);
 	print(b:tostring()); -- [123]
 
@@ -191,7 +191,7 @@ Writes an 8-bit integer value.
 ## buffer:writeint16( value )
 Writes a 16-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint16(123);
 	print(b:tostring()); -- [0,123]
 
@@ -200,7 +200,7 @@ Writes a 16-bit integer value.
 ## buffer:writeint32( value )
 Writes a 32-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint32(123);
 	print(b:tostring()); -- [0,0,0,123]
 
@@ -209,7 +209,7 @@ Writes a 32-bit integer value.
 ## buffer:writeint64( value )
 Writes a 64-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint64(123);
 	print(b:tostring()); -- [0,0,0,0,0,0,0,123]
 
@@ -218,7 +218,7 @@ Writes a 64-bit integer value.
 ## buffer:writefloat( value )
 Writes a 32-bit floating point value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writefloat(123.456);
 	print(b:tostring()); -- [67,122,0,0]
 
@@ -227,7 +227,7 @@ Writes a 32-bit floating point value.
 ## buffer:writedouble( value )
 Writes a 64-bit floating point value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writedouble(123.456);
 	print(b:tostring()); -- [64,111,64,0,0,0,0,0]
 
@@ -236,7 +236,7 @@ Writes a 64-bit floating point value.
 ## buffer:read( [len] )
 Read raw data from the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:write("abc");
 	print(b:read(1)); -- a
 	print(b:read());  -- bc
@@ -246,7 +246,7 @@ Read raw data from the buffer.
 ## buffer:readbuffer( [len] )
 Read data from the buffer into a new buffer.
 
-	local a = libs.buffer.new();
+	local a = require("buffer").new();
 	a:write("abc");
 	print(a:read(1)); -- a
 
@@ -258,7 +258,7 @@ Read data from the buffer into a new buffer.
 ## buffer:readstring( )
 Read a string using the specified encoding (length-prefixed).
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writestring("abc");
 	print(b:readstring()); -- abc
 
@@ -267,7 +267,7 @@ Read a string using the specified encoding (length-prefixed).
 ## buffer:readline( )
 Reads a raw line of text using the specified encoding (not length-prefixed). Returns ``nil`` if no full lines available.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeline("foobar");
 	print(b:readline()); -- foobar
 	
@@ -278,7 +278,7 @@ Reads a raw line of text using the specified encoding (not length-prefixed). Ret
 ## buffer:readbyte( )
 Reads a single byte from the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writebyte(123);
 	print(b:readbyte()); -- 123
 
@@ -287,7 +287,7 @@ Reads a single byte from the buffer.
 ## buffer:readbytes( )
 Read multiple bytes from the buffer.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writestring("abc");
 	print(b:readbytes()); -- [3,97,98,99]
 
@@ -296,7 +296,7 @@ Read multiple bytes from the buffer.
 ## buffer:readuint8( )
 Read unsigned 8-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint8(250);
 	print(b:readuint8()); --  250
 
@@ -305,7 +305,7 @@ Read unsigned 8-bit integer value.
 ## buffer:readint8( )
 Read signed 8-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint8(250);
 	print(b:readint8()); --  -6
 
@@ -314,7 +314,7 @@ Read signed 8-bit integer value.
 ## buffer:readuint16( )
 Read unsigned 16-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint16(250);
 	print(b:readuint16()); --  250
 
@@ -323,7 +323,7 @@ Read unsigned 16-bit integer value.
 ## buffer:readint16( )
 Read signed 16-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint16(250);
 	print(b:readint16()); --  -6
 
@@ -332,7 +332,7 @@ Read signed 16-bit integer value.
 ## buffer:readuint32( )
 Read unsigned 32-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint32(250);
 	print(b:readuint32()); --  250
 
@@ -341,7 +341,7 @@ Read unsigned 32-bit integer value.
 ## buffer:readint32( )
 Read signed 32-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint32(250);
 	print(b:readint32()); --  -6
 
@@ -350,7 +350,7 @@ Read signed 32-bit integer value.
 ## buffer:readuint64( )
 Read unsigned 64-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint64(250);
 	print(b:readuint64()); --  250
 
@@ -359,7 +359,7 @@ Read unsigned 64-bit integer value.
 ## buffer:readint64( )
 Read signed 64-bit integer value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writeint64(250);
 	print(b:readint64()); --  -6
 
@@ -368,7 +368,7 @@ Read signed 64-bit integer value.
 ## buffer:readfloat( )
 Read a 32-bit floating point value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writefloat(123.456);
 	print(b:tostring()); -- [67,122,0,0]
 
@@ -377,6 +377,6 @@ Read a 32-bit floating point value.
 ## buffer:readdouble( )
 Read a 64-bit floating point value.
 
-	local b = libs.buffer.new();
+	local b = require("buffer").new();
 	b:writedouble(123.456);
 	print(b:tostring()); -- [64,111,64,0,0,0,0,0]
