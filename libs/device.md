@@ -1,15 +1,16 @@
-﻿
+
 #Device
 * [device](#device-1)
-* [wol](#device_wol)
-* [irsend](#device_irsend)
-* [keyboard](#device_keyboard)
-* [mouse](#device_mouse)
-* [switch](#device_switch)
-* [vibrate](#device_vibrate)
-* [listen](#device_listen)
-* [toast](#device_toast)
+* [wol](#devicewol-)
+* [irsend](#deviceirsend-code-)
+* [keyboard](#devicekeyboard-)
+* [mouse](#devicemouse-)
+* [switch](#deviceswitch-id-)
+* [vibrate](#devicevibrate-)
+* [listen](#devicelisten-)
+* [toast](#devicetoast-message-)
 	
+
 
 ## device
 The ``device`` library provides actions that can be performed on the client device.
