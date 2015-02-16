@@ -17,7 +17,7 @@
 * [toupper](#utf8toupper-string-)
 * [empty](#utf8empty-string-)
 * [split](#utf8split-string-delim-)
-* [join (table)](#utf8join-delim-table)
+* [join (table)](#utf8join-delim-table-)
 * [join (...)](#utf8join-delim-part1-part2--)
 
 
