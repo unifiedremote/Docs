@@ -15,26 +15,30 @@ For a complete reference, see refer to the [LuaCOM User Manual](http://www.tecgr
 
 
 
-### Creating Objects
+## Creating Objects
 Creates an instance of the object with the specified id.
 
-	obj = luacom.CreateObject("PowerPoint.Application");
+````lua
+obj = luacom.CreateObject("PowerPoint.Application");
+````
 
 
 
-
-### Finding Objects
+## Finding Objects
 Finds a running instance of the object with the specified id.
 
-	obj = luacom.GetObject("PowerPoint.Application");
+````lua
+obj = luacom.GetObject("PowerPoint.Application");
+````
 
 
 
-
-### Releasing Objects
+## Releasing Objects
 It is very important to release all COM objects when they are no longer in use.
 
-	obj = nil;
-	collectgarbage();
+````lua
+obj = nil;
+collectgarbage();
+````
 
 
