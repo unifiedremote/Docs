@@ -24,24 +24,23 @@
 
 ## utf8
 The ``utf8`` library provides essential string manipulation functions for UTF8 encoded text. 
-For best performance, create a UTF8 string instance and re-use it when possible.
 
 ````lua
 local utf8 = require("utf8");
-
--- Create new utf8 string instance
-local str = utf8.new("hello world!");
-local space = str:indexof(" ");
-
--- Create new utf8 string with a specified length
--- This will truncate strings that are longer than the length
-local str = utf8.new("hello world .......", 5);
-
--- Use the global functions for quick use
-local space = utf8.indexof("hello world!", " ");
 ````
 
-All of the UTF8 library functions listed below can be used both on instances or as global functions. The first ``string`` argument is omitted when using the instance functions as shown in the example above.
+All functions can be used as global functions
+
+````lua
+utf8.contains("foo bar", "foo");
+````
+
+For best performance with large strings, create a UTF8 string instance and re-use it when possible. Note the instance (``str:``) syntax!
+
+````lua
+local str = utf8.new("foo bar");
+str:contains("foo bar", "foo");
+````
 
 
 
