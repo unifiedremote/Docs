@@ -1,9 +1,9 @@
 
 # COM
 * [luacom](#com-1)
-* [luacom.CreateObject](#luacomCreateObject-id-)
-* [luacom.GetObject](#luacomGetObject-id-)
-* [Releasing](#Releasing)
+* [luacom.CreateObject](#luacomcreateobject-id-)
+* [luacom.GetObject](#luacomgetobject-id-)
+* [Releasing](#releasing)
 
 
 
