@@ -1,5 +1,6 @@
 ﻿
 # Buffer
+* [buffer](#buffer-1)
 * [new](#buffer_new)
 * [length](#buffer_length)
 * [available](#buffer_available)
