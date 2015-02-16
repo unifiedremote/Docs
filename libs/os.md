@@ -73,7 +73,7 @@ os.start("ipconfig", "/all");
 
 
 ### os.script( script )
-Alias for [script.default](../script.md#scriptdefault-).
+Alias for [script.default](script.md#scriptdefault-).
 
 ```lua
 os.script("echo \"foo\"");
