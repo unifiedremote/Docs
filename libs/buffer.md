@@ -69,7 +69,7 @@ Returns the total length of the data in the buffer.
 
 ````lua
 local b = require("buffer").new();
-b.writebyte(123);
+b:writebyte(123);
 print(buffer:length()); -- 1
 ````
 
@@ -80,9 +80,9 @@ Returns the length of unread data in the buffer.
 
 ````lua
 local b = require("buffer").new();
-b.writebyte(123);
+b:writebyte(123);
 print(buffer.available()); -- 1
-b.readbyte();
+b:readbyte();
 print(buffer.available()); -- 0
 ````
 
