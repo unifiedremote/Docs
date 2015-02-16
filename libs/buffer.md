@@ -10,6 +10,7 @@
 * [write](#buffer_write)
 * [writebuffer](#buffer_writebuffer)
 * [writestring](#buffer_writestring)
+* [writeline](#buffer_writeline)
 * [writebyte](#buffer_writebyte)
 * [writebytes](#buffer_writebytes)
 * [writeint8](#buffer_writeint8)
@@ -21,6 +22,7 @@
 * [read](#buffer_read)
 * [readbuffer](#buffer_readbuffer)
 * [readstring](#buffer_readstring)
+* [readline](#buffer_readline)
 * [readbyte](#buffer_readbyte)
 * [readbytes](#buffer_readbytes)
 * [readuint8](#buffer_readuint8)
@@ -33,6 +35,7 @@
 * [readint64](#buffer_readint64)
 * [readfloat](#buffer_readfloat)
 * [readdouble](#buffer_readdouble)
+
 
 
 
@@ -147,6 +150,15 @@ Writes a string using the specified encoding (length-prefixed).
 
 
 
+### buffer:writeline( str )
+Writes a raw line of text using the specified encoding (not length-prefixed).
+
+	local b = libs.buffer.new();
+	b:writeline("foobar");
+	print(b:readline()); -- foobar
+
+
+
 ### buffer:writebyte( value )
 Writes a single byte to the buffer.
 
@@ -248,6 +260,17 @@ Read a string using the specified encoding (length-prefixed).
 	local b = libs.buffer.new();
 	b:writestring("abc");
 	print(b:readstring()); -- abc
+
+
+
+### buffer:readline( )
+Reads a raw line of text using the specified encoding (not length-prefixed). Returns ``nil`` if no full lines available.
+
+	local b = libs.buffer.new();
+	b:writeline("foobar");
+	print(b:readline()); -- foobar
+	
+	b:readline(); -- nil
 
 
 
