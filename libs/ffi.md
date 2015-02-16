@@ -1,5 +1,5 @@
-﻿
-FFI
+
+# FFI
 * [Declaring Functions](#ffi_declare)
 * [Standard System Funtions](#ffi_std)
 * [External Functions](#ffi_external)
