@@ -17,7 +17,7 @@ The ``socket`` library provides a way to easily read and write binary data.
 
 ```lua
 -- Create a new socket
-local socket = require("socket").new();
+local s = require("socket").new();
 
 -- Attach event handler
 s:onconnect(function ()
@@ -31,6 +31,10 @@ s:connect("localhost", 1234);
 
 ### socket.new( )
 Creates a new socket.
+
+```lua
+local s = require("socket").new();
+```
 
 
 
