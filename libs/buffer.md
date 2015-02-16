@@ -48,7 +48,7 @@ The ``buffer`` library provides a way to easily read and write binary data.
 
 
 
-### buffer.new( [encoding] [,byteorder] )
+## buffer.new( [encoding] [,byteorder] )
 Creates a new buffer (default UTF8 encoding and network byte order).
 
 Supported encodings: ``ascii``, ``latin1``, ``latin2``, ``latin9``,
@@ -62,7 +62,7 @@ Supported byte orders: ``le``, ``be``, ``network``, ``native``.
 
 
 
-### buffer:length( )
+## buffer:length( )
 Returns the total length of the data in the buffer.
 
 	local b = libs.buffer.new();
@@ -71,7 +71,7 @@ Returns the total length of the data in the buffer.
 
 
 
-### buffer:available( )
+## buffer:available( )
 Returns the length of unread data in the buffer.
 
 	local b = libs.buffer.new();
@@ -82,7 +82,7 @@ Returns the length of unread data in the buffer.
 
 
 
-### buffer:position( )
+## buffer:position( )
 Returns the current position in the buffer.
 
 	local b = libs.buffer.new();
@@ -93,7 +93,7 @@ Returns the current position in the buffer.
 
 
 
-### buffer:at( pos )
+## buffer:at( pos )
 Returns the byte at the specified position (zero-index based).
 
 	local b = libs.buffer.new();
@@ -103,7 +103,7 @@ Returns the byte at the specified position (zero-index based).
 
 
 
-### buffer:tostring( )
+## buffer:tostring( )
 Returns a string representation of the buffer.
 
 	local b = libs.buffer.new();
@@ -112,7 +112,7 @@ Returns a string representation of the buffer.
 
 
 
-### buffer:tohex( )
+## buffer:tohex( )
 Returns a string hex representation of the buffer.
 
 	local b = libs.buffer.new();
@@ -121,7 +121,7 @@ Returns a string hex representation of the buffer.
 
 
 
-### buffer:write( raw )
+## buffer:write( raw )
 Write raw data to buffer.
 
 	local b = libs.buffer.new();
@@ -130,7 +130,7 @@ Write raw data to buffer.
 
 
 
-### buffer:writebuffer( buffer )
+## buffer:writebuffer( buffer )
 Copies the data from another buffer.
 
 	local a = libs.buffer.new();
@@ -142,7 +142,7 @@ Copies the data from another buffer.
 
 
 
-### buffer:writestring( str )
+## buffer:writestring( str )
 Writes a string using the specified encoding (length-prefixed).
 
 	local b = libs.buffer.new("utf16");
@@ -151,7 +151,7 @@ Writes a string using the specified encoding (length-prefixed).
 
 
 
-### buffer:writeline( str )
+## buffer:writeline( str )
 Writes a raw line of text using the specified encoding (not length-prefixed).
 
 	local b = libs.buffer.new();
@@ -160,7 +160,7 @@ Writes a raw line of text using the specified encoding (not length-prefixed).
 
 
 
-### buffer:writebyte( value )
+## buffer:writebyte( value )
 Writes a single byte to the buffer.
 
 	local b = libs.buffer.new();
@@ -169,7 +169,7 @@ Writes a single byte to the buffer.
 
 
 
-### buffer:writebytes( value )
+## buffer:writebytes( value )
 Writes multiple bytes to the buffer.
 
 	local b = libs.buffer.new();
@@ -179,7 +179,7 @@ Writes multiple bytes to the buffer.
 
 
 
-### buffer:writeint8( value )
+## buffer:writeint8( value )
 Writes an 8-bit integer value.
 
 	local b = libs.buffer.new();
@@ -188,7 +188,7 @@ Writes an 8-bit integer value.
 
 
 
-### buffer:writeint16( value )
+## buffer:writeint16( value )
 Writes a 16-bit integer value.
 
 	local b = libs.buffer.new();
@@ -197,7 +197,7 @@ Writes a 16-bit integer value.
 
 
 
-### buffer:writeint32( value )
+## buffer:writeint32( value )
 Writes a 32-bit integer value.
 
 	local b = libs.buffer.new();
@@ -206,7 +206,7 @@ Writes a 32-bit integer value.
 
 
 
-### buffer:writeint64( value )
+## buffer:writeint64( value )
 Writes a 64-bit integer value.
 
 	local b = libs.buffer.new();
@@ -215,7 +215,7 @@ Writes a 64-bit integer value.
 
 
 
-### buffer:writefloat( value )
+## buffer:writefloat( value )
 Writes a 32-bit floating point value.
 
 	local b = libs.buffer.new();
@@ -224,7 +224,7 @@ Writes a 32-bit floating point value.
 
 
 
-### buffer:writedouble( value )
+## buffer:writedouble( value )
 Writes a 64-bit floating point value.
 
 	local b = libs.buffer.new();
@@ -233,7 +233,7 @@ Writes a 64-bit floating point value.
 
 
 
-### buffer:read( [len] )
+## buffer:read( [len] )
 Read raw data from the buffer.
 
 	local b = libs.buffer.new();
@@ -243,7 +243,7 @@ Read raw data from the buffer.
 
 
 
-### buffer:readbuffer( [len] )
+## buffer:readbuffer( [len] )
 Read data from the buffer into a new buffer.
 
 	local a = libs.buffer.new();
@@ -255,7 +255,7 @@ Read data from the buffer into a new buffer.
 
 
 
-### buffer:readstring( )
+## buffer:readstring( )
 Read a string using the specified encoding (length-prefixed).
 
 	local b = libs.buffer.new();
@@ -264,7 +264,7 @@ Read a string using the specified encoding (length-prefixed).
 
 
 
-### buffer:readline( )
+## buffer:readline( )
 Reads a raw line of text using the specified encoding (not length-prefixed). Returns ``nil`` if no full lines available.
 
 	local b = libs.buffer.new();
@@ -275,7 +275,7 @@ Reads a raw line of text using the specified encoding (not length-prefixed). Ret
 
 
 
-### buffer:readbyte( )
+## buffer:readbyte( )
 Reads a single byte from the buffer.
 
 	local b = libs.buffer.new();
@@ -284,7 +284,7 @@ Reads a single byte from the buffer.
 
 
 
-### buffer:readbytes( )
+## buffer:readbytes( )
 Read multiple bytes from the buffer.
 
 	local b = libs.buffer.new();
@@ -293,7 +293,7 @@ Read multiple bytes from the buffer.
 
 
 
-### buffer:readuint8( )
+## buffer:readuint8( )
 Read unsigned 8-bit integer value.
 
 	local b = libs.buffer.new();
@@ -302,7 +302,7 @@ Read unsigned 8-bit integer value.
 
 
 
-### buffer:readint8( )
+## buffer:readint8( )
 Read signed 8-bit integer value.
 
 	local b = libs.buffer.new();
@@ -311,7 +311,7 @@ Read signed 8-bit integer value.
 
 
 
-### buffer:readuint16( )
+## buffer:readuint16( )
 Read unsigned 16-bit integer value.
 
 	local b = libs.buffer.new();
@@ -320,7 +320,7 @@ Read unsigned 16-bit integer value.
 
 
 
-### buffer:readint16( )
+## buffer:readint16( )
 Read signed 16-bit integer value.
 
 	local b = libs.buffer.new();
@@ -329,7 +329,7 @@ Read signed 16-bit integer value.
 
 
 
-### buffer:readuint32( )
+## buffer:readuint32( )
 Read unsigned 32-bit integer value.
 
 	local b = libs.buffer.new();
@@ -338,7 +338,7 @@ Read unsigned 32-bit integer value.
 
 
 
-### buffer:readint32( )
+## buffer:readint32( )
 Read signed 32-bit integer value.
 
 	local b = libs.buffer.new();
@@ -347,7 +347,7 @@ Read signed 32-bit integer value.
 
 
 
-### buffer:readuint64( )
+## buffer:readuint64( )
 Read unsigned 64-bit integer value.
 
 	local b = libs.buffer.new();
@@ -356,7 +356,7 @@ Read unsigned 64-bit integer value.
 
 
 
-### buffer:readint64( )
+## buffer:readint64( )
 Read signed 64-bit integer value.
 
 	local b = libs.buffer.new();
@@ -365,7 +365,7 @@ Read signed 64-bit integer value.
 
 
 
-### buffer:readfloat( )
+## buffer:readfloat( )
 Read a 32-bit floating point value.
 
 	local b = libs.buffer.new();
@@ -374,7 +374,7 @@ Read a 32-bit floating point value.
 
 
 
-### buffer:readdouble( )
+## buffer:readdouble( )
 Read a 64-bit floating point value.
 
 	local b = libs.buffer.new();
