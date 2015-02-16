@@ -1,27 +1,28 @@
 ﻿
 # UTF8
-* [utf8](#)
-* [startwith](#utf8_startwith)
-* [endswith](#utf8_endswith)
-* [iequals](#utf8_iequals)
-* [equals](#utf8_equals)
-* [sub](#utf8_sub)
-* [char](#utf8_char)
-* [len](#utf8_len)
-* [indexof](#utf8_indexof)
-* [lastindexof](#utf8_lastindexof)
-* [replace](#utf8_replace)
-* [contains](#utf8_contains)
-* [trim](#utf8_trim)
-* [tolower](#utf8_tolower)
-* [toupper](#utf8_toupper)
-* [empty](#utf8_empty)
-* [split](#utf8split)
-* [join](#utf8join)
+* [utf8](#utf8-1)
+* [startwith](#utf8startwith-string-find-)
+* [endswith](#utf8endswith-string-find-)
+* [iequals](#utf8iequals-a-b-)
+* [equals](#utf8equals-a-b-)
+* [sub](#utf8sub-string-start-length-)
+* [char](#utf8char-string-index)
+* [len](#utf8len-string)
+* [indexof](#utf8indexof-string-find-)
+* [lastindexof](#utf8lastindexof-string-find-)
+* [replace](#utf8replace-string-old-new-)
+* [contains](#utf8contains-string-find-)
+* [trim](#utf8trim-string-)
+* [tolower](#utf8tolower-string-)
+* [toupper](#utf8toupper-string-)
+* [empty](#utf8empty-string-)
+* [split](#utf8split-string-delim-)
+* [join (table)](#utf8join-delim-table)
+* [join (...)](#utf8join-delim-part1-part2-)
 
 
 
-## UTF8
+## utf8
 The ``utf8`` library provides essential string manipulation functions for UTF8 encoded text. 
 For best performance, create a UTF8 string instance and re-use it when possible.
 
@@ -187,7 +188,7 @@ print(utf8.empty(" "));		-- false
 
 
 
-### utf8.split( subject, delim )
+### utf8.split( string, delim )
 Splits the ``subject`` string using the specified ``delim``.
 
 ````lua
