@@ -1,12 +1,13 @@
 
 # OS
 * [os](#os-1)
-* [sleep](#ossleep-time-)
-* [open](#osopen-path-)
-* [openall](#osopenall-path-)
-* [start](#osstart-command-arg1-arg2-)
-* [script](#osscript-script-)
-* [throw](#osthrow-message-)
+* [extensions](#extensions)
+  * [sleep](#ossleep-time-)
+  * [open](#osopen-path-)
+  * [openall](#osopenall-path-)
+  * [start](#osstart-command-arg1-arg2-)
+  * [script](#osscript-script-)
+  * [throw](#osthrow-message-)
 
 
 
@@ -18,6 +19,10 @@ Refer to the [official Lua documentation](http://www.lua.org/manual/5.1/) for mo
 ```lua
 os.clock();
 ```
+
+
+
+## extensions
 
 The ``os`` library has been extended with some additional functions.
 
