@@ -24,57 +24,57 @@ Refer to the [official documentation from LuaJIT](http://bitop.luajit.org/api.ht
 
 
 
-## bit.bnot( x )
+### bit.bnot( x )
 Returns the bitwise **not** of ``x``.
 
 
 
-## bit.band( x, y )
+### bit.band( x, y )
 Returns the bitwise **and** of ``x`` and ``y``.
 
 
 
-## bit.bor( x, y )
+### bit.bor( x, y )
 Returns the bitwise **or** of ``x`` and ``y``.
 
 
 
-## bit.bxor( x, y )
+### bit.bxor( x, y )
 Returns the bitwise **exclusive or** of ``x`` and ``y``.
 
 
 
-## bit.lshift( x, n )
+### bit.lshift( x, n )
 Returns the bitwise **logical left shift** of ``x`` of ``n`` steps.
 
 
 
-## bit.rshift( x, n )
+### bit.rshift( x, n )
 Returns the bitwise **logical right shift** of ``x`` of ``n`` steps.
 
 
 
-## bit.arshift( x, n )
+### bit.arshift( x, n )
 Returns the bitwise **arithmetic right shift** of ``x`` of ``n`` steps.
 
 
 
-## bit.rol( x, n )
+### bit.rol( x, n )
 Returns the bitwise **left rotation** of ``x`` of ``n`` steps.
 
 
 
-## bit.ror( x, n )
+### bit.ror( x, n )
 Returns the bitwise **right rotation** of ``x`` of ``n`` steps.
 
 
 
-## bit.tohex( x [,n] )
+### bit.tohex( x [,n] )
 Helper function to convert a number to a hex string.
 
 
 
-## bit.tobit( x )
+### bit.tobit( x )
 Helper function to normalize values
 
 
