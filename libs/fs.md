@@ -55,7 +55,7 @@
 The ``fs`` library provides essential file system functiuons for files and folders.
 
 ````lua
-local fs = libs.fs;
+local fs = require("fs");
 ````
 
 
