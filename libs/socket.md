@@ -78,7 +78,7 @@ end);
 
 
 
-#### socket:close( )
+### socket:close( )
 Closes the socket if it is connected. Invokes ``onclose``.
 
 ```lua
@@ -94,7 +94,7 @@ end);
 
 
 
-#### socket:onconnect( )
+### socket:onconnect( )
 Callback to invoke when connection is established.
 
 ```lua
