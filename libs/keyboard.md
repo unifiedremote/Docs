@@ -12,7 +12,7 @@
 
 
 ## keyboard
-The keyboard library provides actions for simulating key strokes and sending text. Refer to the [keys list](/res/keys).
+The keyboard library provides actions for simulating key strokes and sending text. Refer to the [keys list](/res/keys.md).
 
 ````lua
 local kb = require("keyboard");
