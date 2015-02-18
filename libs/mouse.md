@@ -1,16 +1,16 @@
 
 # Mouse
 * [mouse](#mouse-1)
-* [click](#mouse_click)
-* [moveto](#mouse_moveto)
-* [moveby](#mouse_moveby)
-* [moveraw](#mouse_moveraw)
-* [double](#mouse_double)
-* [down](#mouse_down)
-* [up](#mouse_up)
-* [vscroll](#mouse_vscroll)
-* [hscroll](#mouse_hscroll)
-* [position](#mouse_position)
+* [click](#mouseclick-button-)
+* [moveto](#mousemoveto-x-y-)
+* [moveby](#mousemoveby-x-y-)
+* [moveraw](#mousemoveraw-x-y-)
+* [double](#mousedouble-button-)
+* [down](#mousedown-button-)
+* [up](#mouseup-button-)
+* [vscroll](#mousevscroll-amount-)
+* [hscroll](#mousehscroll-amount-)
+* [position](#mouseposition)
 
 
 
