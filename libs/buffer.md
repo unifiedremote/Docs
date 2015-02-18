@@ -49,7 +49,7 @@ local buffer = require("buffer").new();
 
 
 
-## buffer.new( [encoding] [,byteorder] )
+### buffer.new( [encoding] [,byteorder] )
 Creates a new buffer (default UTF8 encoding and network byte order).
 
 Supported encodings: ``ascii``, ``latin1``, ``latin2``, ``latin9``,
@@ -64,7 +64,7 @@ local b3 = libs.buffer.new("utf8", "le");
 ````
 
 
-## buffer:length( )
+### buffer:length( )
 Returns the total length of the data in the buffer.
 
 ````lua
@@ -75,7 +75,7 @@ print(buffer:length()); -- 1
 
 
 
-## buffer:available( )
+### buffer:available( )
 Returns the length of unread data in the buffer.
 
 ````lua
@@ -88,7 +88,7 @@ print(buffer.available()); -- 0
 
 
 
-## buffer:position( )
+### buffer:position( )
 Returns the current position in the buffer.
 
 ````lua
@@ -101,7 +101,7 @@ print(b:position()); -- 1
 
 
 
-## buffer:at( pos )
+### buffer:at( pos )
 Returns the byte at the specified position (zero-index based).
 
 ````lua
@@ -113,7 +113,7 @@ print(b:at(2));  -- 'b' 98
 
 
 
-## buffer:tostring( )
+### buffer:tostring( )
 Returns a string representation of the buffer.
 
 ````lua
@@ -124,7 +124,7 @@ print(b:tostring()); -- [12,34,56]
 
 
 
-## buffer:tohex( )
+### buffer:tohex( )
 Returns a string hex representation of the buffer.
 
 ````lua
@@ -135,7 +135,7 @@ print(b:tostring()); -- [A1,B2,C3]
 
 
 
-## buffer:write( raw )
+### buffer:write( raw )
 Write raw data to buffer.
 
 ````lua
@@ -145,7 +145,7 @@ print(b:tostring()); -- [97,98,99]
 ````
 
 
-## buffer:writebuffer( buffer )
+### buffer:writebuffer( buffer )
 Copies the data from another buffer.
 
 ````lua
@@ -158,7 +158,7 @@ print(b:tostring()); -- [97,98,99]
 ````
 
 
-## buffer:writestring( str )
+### buffer:writestring( str )
 Writes a string using the specified encoding (length-prefixed).
 
 ````lua
@@ -169,7 +169,7 @@ print(b:tostring()); -- [6,97,0,98,0,99,0]
 
 
 
-## buffer:writeline( str )
+### buffer:writeline( str )
 Writes a raw line of text using the specified encoding (not length-prefixed).
 
 ````lua
@@ -180,7 +180,7 @@ print(b:readline()); -- foobar
 
 
 
-## buffer:writebyte( value )
+### buffer:writebyte( value )
 Writes a single byte to the buffer.
 
 ````lua
@@ -191,7 +191,7 @@ print(b:tostring()); -- [123]
 
 
 
-## buffer:writebytes( value )
+### buffer:writebytes( value )
 Writes multiple bytes to the buffer.
 
 ````lua
@@ -203,7 +203,7 @@ print(b:tostring()); -- [12,34,56,78]
 
 
 
-## buffer:writeint8( value )
+### buffer:writeint8( value )
 Writes an 8-bit integer value.
 
 ````lua
@@ -214,7 +214,7 @@ print(b:tostring()); -- [123]
 
 
 
-## buffer:writeint16( value )
+### buffer:writeint16( value )
 Writes a 16-bit integer value.
 
 ````lua
@@ -225,7 +225,7 @@ print(b:tostring()); -- [0,123]
 
 
 
-## buffer:writeint32( value )
+### buffer:writeint32( value )
 Writes a 32-bit integer value.
 
 ````lua
@@ -236,7 +236,7 @@ print(b:tostring()); -- [0,0,0,123]
 
 
 
-## buffer:writeint64( value )
+### buffer:writeint64( value )
 Writes a 64-bit integer value.
 
 ````lua
@@ -247,7 +247,7 @@ print(b:tostring()); -- [0,0,0,0,0,0,0,123]
 
 
 
-## buffer:writefloat( value )
+### buffer:writefloat( value )
 Writes a 32-bit floating point value.
 
 ````lua
@@ -258,7 +258,7 @@ print(b:tostring()); -- [67,122,0,0]
 
 
 
-## buffer:writedouble( value )
+### buffer:writedouble( value )
 Writes a 64-bit floating point value.
 
 ````lua
@@ -269,7 +269,7 @@ print(b:tostring()); -- [64,111,64,0,0,0,0,0]
 
 
 
-## buffer:read( [len] )
+### buffer:read( [len] )
 Read raw data from the buffer.
 
 ````lua
@@ -281,7 +281,7 @@ print(b:read());  -- bc
 
 
 
-## buffer:readbuffer( [len] )
+### buffer:readbuffer( [len] )
 Read data from the buffer into a new buffer.
 
 ````lua
@@ -295,7 +295,7 @@ print(b:tostring()) -- [98,99]
 
 
 
-## buffer:readstring( )
+### buffer:readstring( )
 Read a string using the specified encoding (length-prefixed).
 
 ````lua
@@ -306,7 +306,7 @@ print(b:readstring()); -- abc
 
 
 
-## buffer:readline( )
+### buffer:readline( )
 Reads a raw line of text using the specified encoding (not length-prefixed). Returns ``nil`` if no full lines available.
 
 ````lua
@@ -319,7 +319,7 @@ b:readline(); -- nil
 
 
 
-## buffer:readbyte( )
+### buffer:readbyte( )
 Reads a single byte from the buffer.
 
 ````lua
@@ -330,7 +330,7 @@ print(b:readbyte()); -- 123
 
 
 
-## buffer:readbytes( )
+### buffer:readbytes( )
 Read multiple bytes from the buffer.
 
 ````lua
@@ -341,7 +341,7 @@ print(b:readbytes()); -- [3,97,98,99]
 
 
 
-## buffer:readuint8( )
+### buffer:readuint8( )
 Read unsigned 8-bit integer value.
 
 ````lua
@@ -352,7 +352,7 @@ print(b:readuint8()); --  250
 
 
 
-## buffer:readint8( )
+### buffer:readint8( )
 Read signed 8-bit integer value.
 
 ````lua
@@ -363,7 +363,7 @@ print(b:readint8()); --  -6
 
 
 
-## buffer:readuint16( )
+### buffer:readuint16( )
 Read unsigned 16-bit integer value.
 
 ````lua
@@ -374,7 +374,7 @@ print(b:readuint16()); --  250
 
 
 
-## buffer:readint16( )
+### buffer:readint16( )
 Read signed 16-bit integer value.
 
 ````lua
@@ -385,7 +385,7 @@ print(b:readint16()); --  -6
 
 
 
-## buffer:readuint32( )
+### buffer:readuint32( )
 Read unsigned 32-bit integer value.
 
 ````lua
@@ -396,7 +396,7 @@ print(b:readuint32()); --  250
 
 
 
-## buffer:readint32( )
+### buffer:readint32( )
 Read signed 32-bit integer value.
 
 ````lua
@@ -407,7 +407,7 @@ print(b:readint32()); --  -6
 
 
 
-## buffer:readuint64( )
+### buffer:readuint64( )
 Read unsigned 64-bit integer value.
 
 ````lua
@@ -418,7 +418,7 @@ print(b:readuint64()); --  250
 
 
 
-## buffer:readint64( )
+### buffer:readint64( )
 Read signed 64-bit integer value.
 
 ````lua
@@ -429,7 +429,7 @@ print(b:readint64()); --  -6
 
 
 
-## buffer:readfloat( )
+### buffer:readfloat( )
 Read a 32-bit floating point value.
 
 ````lua
@@ -440,7 +440,7 @@ print(b:tostring()); -- [67,122,0,0]
 
 
 
-## buffer:readdouble( )
+### buffer:readdouble( )
 Read a 64-bit floating point value.
 
 ````lua
