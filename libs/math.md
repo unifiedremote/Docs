@@ -1,8 +1,7 @@
 ﻿
 # Math
-* [math](#math)
-* [Extensions](#ext)
-	* [round](#ext_round)
+* [math](#math-1)
+* [round](#math-round-x-)
 
 
 ## math
@@ -12,9 +11,7 @@ The ``math`` library is a standard Lua library. It is a global library and does 
 
 Refer to the [official Lua documentation](http://www.lua.org/manual/5.1/) for more details.
 
-
-## Extensions
-Some additional math functions have been added.
+The ``math`` library has been extended with some additional functions.
 
 
 ### math.round( x )
