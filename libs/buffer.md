@@ -137,6 +137,10 @@ print(b:tostring()); -- [A1,B2,C3]
 
 
 
+## writing
+
+
+
 ### buffer:write( raw )
 Write raw data to buffer.
 
@@ -268,6 +272,10 @@ local b = require("buffer").new();
 b:writedouble(123.456);
 print(b:tostring()); -- [64,111,64,0,0,0,0,0]
 ````
+
+
+
+## reading
 
 
 
