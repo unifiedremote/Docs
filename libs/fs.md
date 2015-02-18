@@ -34,7 +34,7 @@
     * [createdir](#fs_createdir)
     * [createdirs](#fs_createdirs)
     * [createfile](#fs_createfile)
-* [read/write](#read-write)
+* [read/write](#readwrite)
     * [write](#fs_write)
     * [writelines](#fs_writelines)
     * [append](#fs_append)
