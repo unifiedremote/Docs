@@ -1,16 +1,16 @@
 
 # HTTP
 * [http](#http-1)
-* [get](#http_get)
-* [post](#http_post)
-* [request](#httprequest-)
-* [discover](#http_discover)
-* [encode/decode](#encode-decode)
-	* [encode](#http_encode)
-	* [decode](#http_decode)
-	* [urlencode](#http_urlencode)
-	* [urlcomponentencode](#http_urlencode)
-	* [urldecode](#http_urldecode)
+* [get](#httpget-url-callback-)
+* [post](#httppost-url-content-callback-)
+* [request](#httprequest-request-callback-)
+* [discover](#httpdiscover-options)
+* [encodedecode](#encode-decode)
+	* [encode](#httpencode-value-)
+	* [decode](#httpdecode-value-)
+	* [urlencode](#httpurlencode-value-)
+	* [urlcomponentencode](#httpurlencode-value-)
+	* [urldecode](#httpurldecode-value-)
 
 
 
