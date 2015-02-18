@@ -4,12 +4,12 @@
 * [get](#httpget-url-callback-)
 * [post](#httppost-url-content-callback-)
 * [request](#httprequest-request-callback-)
-* [discover](#httpdiscover-options)
+* [discover](#httpdiscover-option-s)
 * [encodedecode](#encode-decode)
 	* [encode](#httpencode-value-)
 	* [decode](#httpdecode-value-)
 	* [urlencode](#httpurlencode-value-)
-	* [urlcomponentencode](#httpurlencode-value-)
+	* [urlcomponentencode](#httpurlcomponentencode-value-)
 	* [urldecode](#httpurldecode-value-)
 
 
