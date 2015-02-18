@@ -27,7 +27,13 @@ x,y,w,h,img = screen.capture();
 
 
 ### screen.capture( x, y, w, h, [update]  )
-Capture the specified screen area. Optionally return only the area that has changed since the previous call. If no pixels have changed since the previous then the image will be ``nil``.
+Capture the specified screen area.
+
+````lua
+x,y,w,h,img = screen.capture(0, 0, 400, 400);
+````
+
+Optionally it can return only the sub-area that has changed since the previous call. If no pixels have changed since the previous call then the image will be ``nil``. The returned coordinates and size will correspond to the sub-area that has actually changed.
 
 ````lua
 x,y,w,h,img = screen.capture(0, 0, 400, 400, true);
