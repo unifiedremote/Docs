@@ -1,16 +1,17 @@
-﻿
+
 # Log
-* [trace](#log_trace)
-* [info](#log_stroke)
-* [warn](#log_warn)
-* [error](#log_error)
+* [log](#log-1)
+* [trace](#logtrace-message-)
+* [info](#logstroke-message-)
+* [warn](#logwarn-message-)
+* [error](#logerror-message-)
 
 
 
 ## log
 The ``log`` library can be used for diagnostics logging.
 
-	local log = libs.log;
+	local log = require("log");
 
 
 
