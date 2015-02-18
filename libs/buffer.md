@@ -54,11 +54,11 @@ local buffer = require("buffer").new();
 ### buffer.new( [encoding] [,byteorder] )
 Creates a new buffer (default UTF8 encoding and network byte order).
 
-Supported encodings: 
+Supported encodings:<br />
 ``ascii``, ``latin1``, ``latin2``, ``latin9``,
 ``utf8``, ``utf16``, ``utf32``, ``windows1250``, ``windows1251``, ``windows1252``.
 
-Supported byte orders: 
+Supported byte orders:<br />
 ``le``, ``be``, ``network``, ``native``.
 
 ````lua
