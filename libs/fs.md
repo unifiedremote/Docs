@@ -1,17 +1,14 @@
 ﻿
 # FS
 * [fs](#fs-1)
-
 * [context](#context)
     * [remotefile](#fs_remotefile)
     * [remotedir](#fs_remotedir)
 	* [workingdir](#fs_workingdir)
-
 * [dirs](#dirs)
     * [homedir](#fs_homedir)
     * [appdir](#fs_appdir)
     * [special](#fs_special)
-
 * [common](#common)
     * [name](#fs_name)
     * [fullname](#fs_fullname)
@@ -21,7 +18,6 @@
     * [move](#fs_move)
     * [rename](#fs_rename)
     * [delete](#fs_delete)
-
 * [path](#path)
 	* [parent](#fs_parent)
     * [expand](#fs_expand)
@@ -29,18 +25,15 @@
     * [combine](#fs_combine)
     * [absolute](#fs_absolute)
     * [temp](#fs_temp)
-
 * [tree](#tree)
     * [roots](#fs_roots)
     * [files](#fs_files)
     * [dirs](#fs_dirs)
     * [list](#fs_list)
-
 * [create](#create)
     * [createdir](#fs_createdir)
     * [createdirs](#fs_createdirs)
     * [createfile](#fs_createfile)
-
 * [read/write](#read-write)
     * [write](#fs_write)
     * [writelines](#fs_writelines)
@@ -48,7 +41,6 @@
     * [appendlines](#fs_appendlines)
     * [read](#fs_read)
     * [readlines](#fs_readlines)
-
 * [attributes](#attributes)
     * [isfile](#fs_isfile)
     * [isdir](#fs_isdir)
