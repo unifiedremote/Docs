@@ -21,7 +21,7 @@ local kb = require("keyboard");
 
 
 ### keyboard.press( key, [...] )
-Performs one or more **consequtive** key presses.
+Performs one or more **consecutive** key presses.
 
 ````lua
 kb.press("down", "down", "return");
