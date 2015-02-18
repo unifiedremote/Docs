@@ -8,7 +8,7 @@
 ## math
 The ``math`` library is a standard Lua library. It is a global library and does not need to be imported.
 
-	math.abs(-123);			--> 123
+	print(math.abs(-123));  -- 123
 
 Refer to the [official Lua documentation](http://www.lua.org/manual/5.1/) for more details.
 
