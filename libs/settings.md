@@ -1,7 +1,8 @@
-﻿
+
 # Settings
-* [Getting](#settings_get)
-* [Setting](#settings_set)
+* [settings](#settings-1)
+* [get](#get)
+* [set](#set)
 	
 
 
@@ -12,24 +13,30 @@ The ``settings`` library is global and does not need to be imported.
 
 
 
-### Getting
+### get
 settings are easily read using the ``settings`` global.
 
-	print("the port is " .. settings.port);
+````lua
+print("the port is " .. settings.port);
+````
 
-settings with keys that aren't valid Lua identifiers can also be retreived.
+For keys containing spaces or other invalid names/characters:
 
-	settings["foo bar 123"];
+````lua
+settings["foo bar 123"];
+````
 
 
 
-
-### Setting
+### set
 settings can just as easily be changed.
 
-	settings.port = 8080;
+````lua
+settings.port = 8080;
+````
 
-Similarily for invalid Lua indentifiers.
+For keys containing spaces or other invalid names/characters:
 
-	settings["foo bar 123"] = "hello world!";
-
+````lua
+settings["foo bar 123"] = "hello world!";
+````
