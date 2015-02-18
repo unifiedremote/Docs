@@ -9,7 +9,7 @@
 * [tostring](#buffertostring-)
 * [tohex](#buffertohex-)
 * [writing](#writing)
-* [write](#bufferwrite-raw-)
+  * [write](#bufferwrite-raw-)
   * [writebuffer](#bufferwritebuffer-buffer-)
   * [writestring](#bufferwritestring-str-)
   * [writeline](#bufferwriteline-str-)
