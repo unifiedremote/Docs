@@ -1,10 +1,10 @@
-﻿
+
 # Timer
 * [timer](#timer)
-* [timeout](#timer_timeout)
-* [interval](#timer_interval)
-* [schedule](#timer_schedule)
-* [cancel](#timer_cancel)
+* [timeout](#timertimeout-fn-time-)
+* [interval](#timerinterval-fn-time-)
+* [schedule](#timerschedule-fn-time-)
+* [cancel](#timercancel-id-)
 
 
 
