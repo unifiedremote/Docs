@@ -1,38 +1,47 @@
-﻿
+
 # Server
-* [load](#server_load)
-* [unload](#server_unload)
-* [run](#server_run)
-* [update](#server_update)
+* [server](#server-1)
+* [load](#serverload-id-)
+* [unload](#serverunload-id-)
+* [run](#serverrun-id-action-extra--)
+* [update](#serverupdate-update-update--)
 	
 
 
 ## server
-The ``server`` library provides helper functions.
+The ``server`` library provides helper functions for interacting with the server and othe rremotes.
 
-	local server = libs.server;
+````lua
+local server = require("server");
+````
 
 
 
 ### server.load( id )
 Tells the server to load (create) the specified remote.
 
-	server.load("Unified.Chrome");
+````lua
+server.load("Unified.Chrome");
+````
 
 
 
 ### server.unload( id )
 Tells the server to unload (destroy) the specified remote.
 
-	server.unload("Unified.Chrome");
+````lua
+server.unload("Unified.Chrome");
+````
 
 
 
 ### server.run( id, action [,extra, ...] )
 Tells the server to run an action for the specified remote.
 
-	server.run("Unified.Chrome", "back");
-	server.run("Unified.Command", execute", "echo foobar");
+````lua
+server.run("Unified.Chrome", "back");
+server.run("Unified.Command", execute", "echo foobar");
+````
 
 The server will automatically load (create) the remote.
 
@@ -41,29 +50,38 @@ The server will automatically load (create) the remote.
 ### server.update( update [,update, ...] )
 Perform one or more layout updates for the active remote.
 
-	server.update(
-		{ id = "info", text = "foobar" },
-		{ id = "tgl", checked = true }
-	);
+````lua
+server.update(
+	{ id = "info", text = "foobar" },
+	{ id = "tgl", checked = true }
+);
+````
+
+For simple updates, you can use the [layout](#layout.md) helper library instead.
 
 This function should be used to perform advanced updates such as lists.
 
-	local items = {
-		{ type = "item", text = "item 1" },
-		{ type = "item", text = "item 2" },
-		{ type = "item", text = "item 3" }
-	};
+````lua
+local items = {
+	{ type = "item", text = "item 1" },
+	{ type = "item", text = "item 2" },
+	{ type = "item", text = "item 3" }
+};
 
-	server.update({ id = "list", children = items });
+server.update({ id = "list", children = items });
+````
 
 As well as creating dialogs:
 
-	server.update({ 
-		type = "dialog", 
-		text = "Hello World!", 
-		children = {
-			{ type = "button", text = "Foo" },
-			{ type = "button", text = "Bar" }
-		}
-	});
-		
+````lua
+server.update({ 
+	type = "dialog", 
+	text = "Hello World!", 
+	children = {
+		{ type = "button", text = "Foo" },
+		{ type = "button", text = "Bar" }
+	}
+});
+````
+
+
