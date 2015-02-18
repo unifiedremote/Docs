@@ -11,7 +11,9 @@
 
 
 ## os
-The ``os`` library is a standard Lua library. It is a global library and does not need to be imported. Refer to the [official Lua documentation](http://www.lua.org/manual/5.1/) for more details.
+The ``os`` library is a standard Lua library. It is a global library and does not need to be imported. 
+
+Refer to the [official Lua documentation](http://www.lua.org/manual/5.1/) for more details.
 
 ```lua
 os.clock();
