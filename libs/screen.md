@@ -2,7 +2,7 @@
 # Screen
 * [screen](#screen-1)
 * [capture](#screencapture-)
-* [capture](#screencapture-x-y-w-h-update-)
+* [capture](#screencapture-x-y-w-h-update--
 * [size](#screensize-)
 
 
