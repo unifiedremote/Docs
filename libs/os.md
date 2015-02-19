@@ -36,8 +36,8 @@ os.sleep(1000);
 ```
 
 
-### os.open( path )
-Open the specified file using the default program.
+### os.open( path, [args] )
+Open the specified file using the default program. If the path is a script or executable then it will execute it in a new window. On Windows it uses ``ShellExecute`` internally.
 
 ```lua
 os.open("C:\\file.txt");
