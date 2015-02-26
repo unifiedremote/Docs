@@ -7,7 +7,8 @@
 * [down](#keyboarddown-key--)
 * [up](#keyboardup-key--)
 * [character](#keyboardcharacter-chr-)
-* [modifier](#keyboardmodifier-key-)
+* [ismodifier](#keyboardismodifier-key-)
+* [iskey](#keyboardiskey-key-)
 
 
 
@@ -76,12 +77,22 @@ kb.character(0x123);
 
 
 
-### keyboard.modifier( key )
+### keyboard.ismodifier( key )
 Returns a bool specifying whether or not the key is a modifier (e.g. ctrl, shift, alt).
 
 ````lua
 print(kb.modifier("ctrl"));    -- true
 print(kb.modifier("return"));  -- false
+````
+
+
+
+### keyboard.iskey( key )
+Returns a bool specifying whether or not the key is a valid key name.
+
+````lua
+print(kb.modifier("f1"));   -- true
+print(kb.modifier("$"));    -- false
 ````
 
 
