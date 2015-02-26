@@ -37,3 +37,11 @@
 * Re-added WMC record button.
 
 ## App
+
+### 3.1
+* Added support for LG IR
+* Fixed Android Wear crash.
+* Fixed performance/battery issue.
+* Fixed app starting itself.
+* Added support for Wake-on-WAN.
+* Various bug fixes and improvements.
