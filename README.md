@@ -1,5 +1,4 @@
-# API
-Official API documentation.
+# Documentation
 
 ## [Introduction](intro/)
 * [Getting Started](intro/getting-started.md)
