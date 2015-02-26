@@ -5,7 +5,7 @@
   * [sleep](#ossleep-time-)
   * [open](#osopen-path-args-)
   * [openall](#osopenall-path-)
-  * [start](#osstart-command-arg1-arg2-)
+  * [start](#osstart-command-arg1-arg2--)
   * [script](#osscript-script-)
   * [throw](#osthrow-message-)
 
