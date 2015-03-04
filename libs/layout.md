@@ -42,4 +42,4 @@ Controls can easily be modified using the following syntax.
 
 
 ### Advanced
-For advanced layout updates (e.g. lists or dialogs), use [``libs.server.update``](/api/libs/server#server_update) instead.
+For advanced layout updates (e.g. lists or dialogs), use [``libs.server.update``](/libs/server#server_update) instead.

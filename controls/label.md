@@ -33,7 +33,7 @@ Labels show text but can also be pressed.
 ## Properties
 
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/api/libs/layout).
+Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
 	<label id="my_lbl" text="foo" />
 

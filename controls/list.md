@@ -23,7 +23,7 @@ The list control provides an easy way of showing larger amounts of data.
 ## Properties
 
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/api/libs/layout).
+Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
 	<list id="my_toggle">
 		...
@@ -52,7 +52,7 @@ Items can also show sub-text using the ``\n`` delimiter.
 	</list>
 
 ### icon
-Specifies the icon to be shown in an item. See [icons list](/api/res/icons) of available icons.
+Specifies the icon to be shown in an item. See [icons list](/res/icons.md) of available icons.
 
 	<list>
 		<item icon="select" text="foo" />

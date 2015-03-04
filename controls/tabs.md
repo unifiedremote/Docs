@@ -35,7 +35,7 @@ Each tab page can have a title and is a grid control, so you can add rows direct
 ## Properties
 
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/api/libs/layout).
+Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
 	<tabs id="my_toggle">
 		...

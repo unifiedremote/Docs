@@ -36,7 +36,7 @@ Buttons are simple pressable controls.
 ## Properties
 
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/api/libs/layout).
+Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
 	<button id="my_btn" text="foo" />
 
@@ -56,7 +56,7 @@ Specifies horizontal text alignment using ``left`` or ``center`` or ``right``.
 	<button text="foo" textalign="right" />
 
 ### icon
-Specifies a standard control icon. See [icons list](/api/res/icons) of available icons.
+Specifies a standard control icon. See [icons list](/res/icons.md) of available icons.
 
 	<button icon="select" />
 

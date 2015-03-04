@@ -32,7 +32,7 @@ Toggles are buttons that can have two states (on or off).
 ## Properties
 
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/api/libs/layout).
+Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
 	<toggle id="my_toggle" />
 
@@ -52,7 +52,7 @@ Specifies horizontal text alignment using ``left`` or ``center`` or ``right``.
 	<toggle text="foo" textalign="right" />
 
 ### icon
-Specifies a standard control icon. See [icons list](/api/res/icons) of available icons.
+Specifies a standard control icon. See [icons list](/res/icons.md) of available icons.
 
 	<toggle icon="select" />
 

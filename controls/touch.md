@@ -37,7 +37,7 @@ The ``touch`` control can be used for receiving multi-touch events.
 ## Properties
 
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/api/libs/layout).
+Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
 	<touch id="my_touch" />
 

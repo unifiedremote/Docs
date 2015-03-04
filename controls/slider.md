@@ -32,7 +32,7 @@ Sliders can be used to show or get progress.
 ## Properties
 
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/api/libs/layout).
+Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
 	<slider id="my_slider" text="foo" />
 

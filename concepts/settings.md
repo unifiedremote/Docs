@@ -37,7 +37,7 @@ It is automatically generated if you set settings from your remote.
         settings.foo = "bar";
     end
 
-Refer to the [settings](/api/libs/settings) library for more details.
+Refer to the [settings](/libs/settings) library for more details.
 
 
 ## Defaults

@@ -62,7 +62,7 @@
 * [Buffer](libs/buffer.md)
 * [Log](libs/log.md)
 
-## [Resources](res/)
-* [Keys](res/keys.md)
-* [Buttons](res/buttons.md)
-* [Icons](res/icons.md)
+## [Resources](/res/)
+* [Keys](/res/keys.md)
+* [Buttons](/res/buttons.md)
+* [Icons](/res/icons.md)
