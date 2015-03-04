@@ -61,11 +61,19 @@ For completely custom themes, create a theme specifier.
 
 
 ## Theme
-Theme specifiers have the following properties:
+Theme specifiers are formatted like CSS:
 
-* color
-* focus
-* active
+````
+normal:<color>;focus:<color>;active:<color>;color:<color>
+````
+
+The following properties can be used:
+
+* normal (default color)
+* focus (pressed/focused color)
+* active (toggled/activated color)
+* color (text/entry color)
+
 
 
 
