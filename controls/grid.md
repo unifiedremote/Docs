@@ -1,15 +1,14 @@
 ﻿
 # Grid
-
 * [Overview](#overview)
 * [Nested Grids](#nested-grids)
 * [weight](#weight)
 * [Spaces](#spaces)
+* [Styling](#styling)
 
 
-Overview
----
 
+## Overview
 The grid control is the main container control used in remotes. It has rows, 
 where each row contains one or more controls laid out in columns. A layout always 
 contains a grid control by default, so you can start by adding rows directly.
@@ -26,8 +25,8 @@ contains a grid control by default, so you can start by adding rows directly.
 	</layout>
 
 
-Nested Grids
----
+
+## Nested Grids
 Grids can also contain nested grids to create more complicated layouts.
 
 	<layout>
@@ -46,8 +45,8 @@ Grids can also contain nested grids to create more complicated layouts.
 	</layout>
 
 
-Weight
----
+
+## Weight
 Use weight to control the width and height of cells. By default cells
 expand to fill up all available space equally. You can use weights to
 redistribute how the space is used up by the different cells. 
@@ -79,8 +78,9 @@ Use ``wrap`` to make cells wrap the size of the their contents.
 		</row>
 	</layout>
 
-Spaces
----
+
+
+## Spaces
 Spaces can be used to create empty cells.
 
 	<layout>
@@ -90,3 +90,10 @@ Spaces can be used to create empty cells.
 			<button text="b" />
 		</row>
 	</layout>
+
+
+
+## Styling
+See the [styling](styling.md) page for more details.
+
+

@@ -1,12 +1,19 @@
 ﻿
 # List
-
 * [Overview](#overview)
+* [Properties](#properties)
+	* [id](#id)
+	* [visibility](#visibility)
+	* [text](#text)
+	* [icon](#icon)
+	* [image](#image)
+* [Events](#events)
+	* [ontap](#ontap)
+	* [onhold](#onhold)
 
 
 
 ## Overview
-
 The list control provides an easy way of showing larger amounts of data.
 
 	<layout>
@@ -22,22 +29,28 @@ The list control provides an easy way of showing larger amounts of data.
 
 ## Properties
 
+
+
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
+Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
 	<list id="my_toggle">
 		...
 	</list>
 
+
+
 ### visibility
-Specifies the visibility state using ``visible`` or ``invisible`` or ``gone``.
+Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
 	<list visibility="gone">
 		...
 	</list>
 
+
+
 ### text
-Specifies the text to be shown in an item.
+Set the text to be shown in an item.
 
 	<list>
 		<item text="foo" />
@@ -51,16 +64,20 @@ Items can also show sub-text using the ``\n`` delimiter.
 		<item text="hello\nworld" />
 	</list>
 
+
+
 ### icon
-Specifies the icon to be shown in an item. See [icons list](/res/icons.md) of available icons.
+Set the icon to be shown in an item. See [icons list](/res/icons.md) of available icons.
 
 	<list>
 		<item icon="select" text="foo" />
 		<item icon="select" text="bar" />
 	</list>
 
+
+
 ### image
-Specifies a custom image to be shown in an item. Should be a path relative to the layout file.
+Set a custom image to be shown in an item. Should be a path relative to the layout file.
 
 	<list>
 		<item image="img.png" text="foo" />
@@ -70,6 +87,8 @@ Specifies a custom image to be shown in an item. Should be a path relative to th
 
 
 ## Events
+
+
 
 ### ontap
 Occurs when an item is tapped.
@@ -85,6 +104,8 @@ Occurs when an item is tapped.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### onhold
 Occurs when an item is held down.

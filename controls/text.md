@@ -1,17 +1,20 @@
 ﻿
 # Text
-
 * [Overview](#overview)
 * [Properties](#properties)
+	* [id](#id)
+	* [visibility](#visibility)
 	* [text](#text)
 	* [textalign](#textalign)
 	* [icon](#icon)
 	* [image](#image)
+* [Styling](#styling)
 * [Events](#events)
 	* [ontap](#ontap)
 	* [onhold](#onhold)
 	* [ondown](#ondown)
 	* [onup](#onup)
+
 
 
 ## Overview
@@ -31,39 +34,58 @@ The ``text`` control is used for editing text input.
 
 ## Properties
 
+
+
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
+Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
 	<text id="my_txt" />
 
+
+
 ### visibility
-Specifies the visibility state using ``visible`` or ``invisible`` or ``gone``.
+Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
 	<text visibility="gone" />
 
+
+
 ### text
-Specifies the current text to be shown.
+Set the current text to be shown.
 
 	<text text="hello world" />
 
+
+
 ### textalign
-Specifies horizontal text alignment using ``left`` or ``center`` or ``right``.
+Set horizontal text alignment using ``left`` or ``center`` or ``right``.
 
 	<text textalign="right" />
 
+
+
 ### hint
-Specifies the placeholder hint (text to be shown when empty).
+Set the placeholder hint (text to be shown when empty).
 
 	<text hint="enter here" />
 
+
+
 ### multiline
-Specifies whether or not the control accepts multiline input (default ``false``).
+Set whether or not the control accepts multiline input (default ``false``).
 
 	<text multiline="true" />
 
 
 
+## Styling
+See the [styling](styling.md) page for more details.
+
+
+
 ## Events
+
+
 
 ### onchange
 Occurs when the text changes.
@@ -77,6 +99,8 @@ Occurs when the text changes.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### ondone
 Occurs when editing ends.

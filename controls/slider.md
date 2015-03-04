@@ -1,11 +1,13 @@
 ﻿
 # Slider
-
 * [Overview](#overview)
 * [Properties](#properties)
+	* [id](#id)
+	* [visibility](#visibility)
 	* [text](#text)
 	* [progress](#progress)
 	* [progressmax](#progressmax)
+* [Styling](#styling)
 * [Events](#events)
 	* [ontap](#ontap)
 	* [onhold](#onhold)
@@ -31,18 +33,24 @@ Sliders can be used to show or get progress.
 
 ## Properties
 
+
+
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
+Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
 	<slider id="my_slider" text="foo" />
 
+
+
 ### visibility
-Specifies the visibility state using ``visible`` or ``invisible`` or ``gone``.
+Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
 	<slider visibility="gone" />
 
+
+
 ### text
-Specifies additional text to be shown in the slider.
+Set additional text to be shown in the slider.
 
 	<slider text="hello world" progress="50" progressmax="100" />
 
@@ -54,19 +62,30 @@ If you don't specify a ``text`` only the percentage will be shown:
 
 	50%
 
+
+
 ### progress
-Specifies the current progress value of the slider.
+Set the current progress value of the slider.
 
 	<slider progress="99" />
 
+
+
 ### progressmax
-Specifies the maximum progress value of the slider (default ``100``).
+Set the maximum progress value of the slider (default ``100``).
 
 	<slider progressmax="200" />
 
 
 
+## Styling
+See the [styling](styling.md) page for more details.
+
+
+
 ## Events
+
+
 
 ### onchange
 Occurs when the slider progress is changing.
@@ -81,6 +100,8 @@ Occurs when the slider progress is changing.
 
 <ct>remote.lua</ct>
 
+
+
 ### ondone
 Occurs when the slider has finished changing value.
 
@@ -93,6 +114,8 @@ Occurs when the slider has finished changing value.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### ondown
 Occurs when the slider is pressed (i.e. starts sliding).
@@ -107,6 +130,8 @@ Occurs when the slider is pressed (i.e. starts sliding).
 
 <ct>remote.lua</ct>
 
+
+
 ### onup
 Occurs when the slider is released (i.e. stops sliding).
 
@@ -119,3 +144,5 @@ Occurs when the slider is released (i.e. stops sliding).
 	end
 
 <ct>remote.lua</ct>
+
+

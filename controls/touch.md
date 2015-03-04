@@ -1,10 +1,12 @@
 ﻿
 # Touch
-
 * [Overview](#overview)
 * [Properties](#properties)
+	* [id](#id)
+	* [visibility](#visibility)
 	* [text](#text)
 	* [image](#image)
+* [Styling](#styling)
 * [Events](#events)
 	* [ontap](#ontap)
 	* [onhold](#onhold)
@@ -17,6 +19,7 @@
 	* [ontouchabs](#ontouchstart)
 	* [ontouchend](#ontouchstart)
 	* [onmultitap](#onmultitap)
+
 
 
 ## Overview
@@ -36,29 +39,44 @@ The ``touch`` control can be used for receiving multi-touch events.
 
 ## Properties
 
+
+
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
+Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
 	<touch id="my_touch" />
 
+
+
 ### visibility
-Specifies the visibility state using ``visible`` or ``invisible`` or ``gone``.
+Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
 	<touch visibility="gone" />
 
+
+
 ### text
-Specifies the text to be shown in the background.
+Set the text to be shown in the background.
 
 	<touch text="hello world" />
 
+
+
 ### image
-Specifies the background image.
+Set the background image.
 
 	<touch image="bg.png" />
 
 
 
+## Styling
+See the [styling](styling.md) page for more details.
+
+
+
 ## Events
+
+
 
 ### ontap
 Occurs when the touch area is tapped.
@@ -73,6 +91,8 @@ Occurs when the touch area is tapped.
 
 <ct>remote.lua</ct>
 
+
+
 ### onhold
 Occurs when the touch area is held down.
 
@@ -85,6 +105,8 @@ Occurs when the touch area is held down.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### ondoubletap
 Occurs when the touch area is double tapped.
@@ -99,6 +121,8 @@ Occurs when the touch area is double tapped.
 
 <ct>remote.lua</ct>
 
+
+
 ### ondown
 Occurs when touch begins.
 
@@ -111,6 +135,8 @@ Occurs when touch begins.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### onup
 Occurs when touch ends.
@@ -125,6 +151,8 @@ Occurs when touch ends.
 
 <ct>remote.lua</ct>
 
+
+
 ### ontouchsize
 Occurs when the touch area changes size.
 
@@ -137,6 +165,8 @@ Occurs when the touch area changes size.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### ontouchstart
 Occurs when a multi-touch event starts (id is the pointer id).
@@ -151,6 +181,8 @@ Occurs when a multi-touch event starts (id is the pointer id).
 
 <ct>remote.lua</ct>
 
+
+
 ### ontouchdelta
 Occurs on multi-touch movement (id is the pointer id).
 
@@ -163,6 +195,8 @@ Occurs on multi-touch movement (id is the pointer id).
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### ontouchabs
 Occurs on multi-touch movement (id is the pointer id).
@@ -177,6 +211,8 @@ Occurs on multi-touch movement (id is the pointer id).
 
 <ct>remote.lua</ct>
 
+
+
 ### ontouchend
 Occurs when a multi-touch event ends (id is the pointer id).
 
@@ -190,6 +226,8 @@ Occurs when a multi-touch event ends (id is the pointer id).
 
 <ct>remote.lua</ct>
 
+
+
 ### onmultitap
 Occurs on a multi-touch tap occurs with n fingers.
 
@@ -202,3 +240,5 @@ Occurs on a multi-touch tap occurs with n fingers.
 	end
 
 <ct>remote.lua</ct>
+
+

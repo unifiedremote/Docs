@@ -1,6 +1,5 @@
 ﻿
 # Button
-
 * [Overview](#overview)
 * [Properties](#properties)
 	* [id](#id)
@@ -9,6 +8,7 @@
 	* [textalign](#textalign)
 	* [icon](#icon)
 	* [image](#image)
+* [Styling](#styling)
 * [Events](#events)
 	* [ontap](#ontap)
 	* [onhold](#onhold)
@@ -18,105 +18,143 @@
 
 
 ## Overview
+Buttons are simple controls that can be pressed.
 
-Buttons are simple pressable controls.
+````xml
+<button text="press me!" ontap="foobar" />
+````
 
-    button text="press me!" ontap="foobar" />
-
-<ct>layout.xml</ct>
-
-	actions.foobar = function ()
-		print("you pressed a button!");
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.foobar = function ()
+	print("you pressed a button!");
+end
+````
 
 
 
 ## Properties
 
-### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
 
-	<button id="my_btn" text="foo" />
+
+### id
+Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
+
+````xml
+<button id="my_btn" />
+````
+
+
 
 ### visibility
-Specifies the visibility state using ``visible`` or ``invisible`` or ``gone``.
+Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
-	<button visibility="gone" />
+````xml
+<button visibility="gone" />
+````
+
+
 
 ### text
-Specifies the text to be shown in the button.
+Set the text to be shown in the button.
 
-	<button text="hello world" />
+````xml
+<button text="hello world" />
+````
+
+
 
 ### textalign
-Specifies horizontal text alignment using ``left`` or ``center`` or ``right``.
+Set horizontal text alignment using ``left`` or ``center`` or ``right``.
 
-	<button text="foo" textalign="right" />
+````xml
+<button text="foo" textalign="right" />
+````
+
+
 
 ### icon
-Specifies a standard control icon. See [icons list](/res/icons.md) of available icons.
+Set a standard control icon. See [icons list](/res/icons.md) of available icons.
 
-	<button icon="select" />
+````xml
+<button icon="select" />
+````
+
+
 
 ### image
-Specifies a custom image to use. Should be a path relative to the layout file.
+Set a custom image to use. Should be an absolute path or relative to the layout file.
 
-	<button image="img.png" />
+````xml
+<button image="img.png" />
+````
+
+
+
+## Styling
+See the [styling](styling.md) page for more details.
 
 
 
 ## Events
 
+
+
 ### ontap
 Occurs when the button is tapped.
 
-	<button text="foo" ontap="foo_tapped" />
+````xml
+<button text="foo" ontap="foo_tapped" />
+````
 
-<ct>layout.xml</ct>
+````lua
+actions.foo_tapped = function ()
+    ...
+end
+````
 
-	actions.foo_tapped = function ()
-		...
-	end
 
-<ct>remote.lua</ct>
 
 ### onhold
 Occurs when the button is held down.
 
-	<button text="bar" onhold="bar_held" />
+````xml
+<button text="bar" onhold="bar_held" />
+````
 
-<ct>layout.xml</ct>
+````lua
+actions.bar_held = function ()
+    ...
+end
+````
 
-	actions.bar_held = function ()
-		...
-	end
 
-<ct>remote.lua</ct>
 
 ### ondown
 Occurs when the button is released.
 
-	<button text="hello" ondown="hello_down" />
+````xml
+<button text="hello" ondown="hello_down" />
+````
 
-<ct>layout.xml</ct>
+````lua
+actions.hello_down = function ()
+    ...
+end
+````
 
-	actions.hello_down = function ()
-		...
-	end
 
-<ct>remote.lua</ct>
 
 ### onup
 Occurs when the button pressed down.
 
-	<button text="world" onup="world_up" />
+````xml
+<button text="world" onup="world_up" />
+````
 
-<ct>layout.xml</ct>
+````lua
+actions.world_up = function ()
+    ...
+end
+````
 
-	actions.world_up = function ()
-		...
-	end
 
-<ct>remote.lua</ct>

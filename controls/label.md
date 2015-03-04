@@ -1,12 +1,14 @@
 ﻿
 # Label
-
 * [Overview](#overview)
 * [Properties](#properties)
+	* [id](#id)
+	* [visibility](#visibility)
 	* [text](#text)
 	* [textalign](#textalign)
 	* [icon](#icon)
 	* [image](#image)
+* [Styling](#styling)
 * [Events](#events)
 	* [ontap](#ontap)
 	* [onhold](#onhold)
@@ -14,8 +16,8 @@
 	* [onup](#onup)
 
 
-## Overview
 
+## Overview
 Labels show text but can also be pressed.
 
 	<label text="press me!" ontap="foobar" />
@@ -32,29 +34,44 @@ Labels show text but can also be pressed.
 
 ## Properties
 
+
+
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
+Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
 	<label id="my_lbl" text="foo" />
 
+
+
 ### visibility
-Specifies the visibility state using ``visible`` or ``invisible`` or ``gone``.
+Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
 	<label visibility="gone" />
 
+
+
 ### text
-Specifies the text to be shown.
+Set the text to be shown.
 
 	<label text="hello world" />
 
+
+
 ### textalign
-Specifies horizontal text alignment using ``left`` or ``center`` or ``right``.
+Set horizontal text alignment using ``left`` or ``center`` or ``right``.
 
 	<label text="foo" textalign="right" />
 
 
 
+## Styling
+See the [styling](styling.md) page for more details.
+
+
+
 ## Events
+
+
 
 ### ontap
 Occurs when the control is tapped.
@@ -69,6 +86,8 @@ Occurs when the control is tapped.
 
 <ct>remote.lua</ct>
 
+
+
 ### onhold
 Occurs when the control is held down.
 
@@ -81,6 +100,8 @@ Occurs when the control is held down.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### ondown
 Occurs when the control is released.
@@ -95,6 +116,8 @@ Occurs when the control is released.
 
 <ct>remote.lua</ct>
 
+
+
 ### onup
 Occurs when the control pressed down.
 
@@ -107,3 +130,5 @@ Occurs when the control pressed down.
 	end
 
 <ct>remote.lua</ct>
+
+

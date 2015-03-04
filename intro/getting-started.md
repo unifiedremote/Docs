@@ -31,4 +31,4 @@ We welcome all pull-requests if you would like to share your remote, or improve 
 
 ## Known Issues
 
-* Please report other issues using our [help page](/contact).
+* Please report other issues using our [help page](http://www.unifiedremote.com/contact).

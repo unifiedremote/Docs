@@ -1,17 +1,20 @@
 ﻿
 # Toggle
-
 * [Overview](#overview)
 * [Properties](#properties)
+	* [id](#id)
+	* [visibility](#visibility)
 	* [text](#text)
 	* [textalign](#textalign)
 	* [icon](#icon)
 	* [image](#image)
+* [Styling](#styling)
 * [Events](#events)
 	* [ontap](#ontap)
 	* [onhold](#onhold)
 	* [ondown](#ondown)
 	* [onup](#onup)
+
 
 
 ## Overview
@@ -31,44 +34,65 @@ Toggles are buttons that can have two states (on or off).
 
 ## Properties
 
+
+
 ### id
-Specifies the ID for this control so that it can be updated later. See [layout library](/libs/layout).
+Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
 	<toggle id="my_toggle" />
 
+
+
 ### visibility
-Specifies the visibility state using ``visible`` or ``invisible`` or ``gone``.
+Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
 	<toggle visibility="gone" />
 
+
+
 ### text
-Specifies the text to be shown.
+Set the text to be shown.
 
 	<toggle text="hello world" />
 
+
+
 ### textalign
-Specifies horizontal text alignment using ``left`` or ``center`` or ``right``.
+Set horizontal text alignment using ``left`` or ``center`` or ``right``.
 
 	<toggle text="foo" textalign="right" />
 
+
+
 ### icon
-Specifies a standard control icon. See [icons list](/res/icons.md) of available icons.
+Set a standard control icon. See [icons list](/res/icons.md) of available icons.
 
 	<toggle icon="select" />
 
+
+
 ### image
-Specifies a custom image to use. Should be a path relative to the layout file.
+Set a custom image to use. Should be a path relative to the layout file.
 
 	<toggle image="img.png" />
 
+
+
 ### checked
-Specifies whether the toggle is on (``true``) or off (``false``).
+Set whether the toggle is on (``true``) or off (``false``).
 
 	<toggle checked="true" />
 
 
 
+## Styling
+See the [styling](styling.md) page for more details.
+
+
+
 ## Events
+
+
 
 ### onchange
 Occurs when the toggle changes state.
@@ -80,6 +104,8 @@ Occurs when the toggle changes state.
 	actions.changed = function (checked)
 		...
 	end
+
+
 
 ### ontap
 Occurs when the control is tapped.
@@ -94,6 +120,8 @@ Occurs when the control is tapped.
 
 <ct>remote.lua</ct>
 
+
+
 ### onhold
 Occurs when the control is held down.
 
@@ -106,6 +134,8 @@ Occurs when the control is held down.
 	end
 
 <ct>remote.lua</ct>
+
+
 
 ### ondown
 Occurs when the control is pressed down.
@@ -120,6 +150,8 @@ Occurs when the control is pressed down.
 
 <ct>remote.lua</ct>
 
+
+
 ### onup
 Occurs when the control released.
 
@@ -132,3 +164,5 @@ Occurs when the control released.
 	end
 
 <ct>remote.lua</ct>
+
+
