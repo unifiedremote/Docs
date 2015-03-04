@@ -19,15 +19,15 @@
 ## Overview
 Sliders can be used to show or get progress.
 
-	<slider text="position" progress="50" progressmax="100" onchange="update" />
+````xml
+<slider text="position" progress="50" progressmax="100" onchange="update" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.update = function (progress)
-		print("progress was changed to " .. progress);
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.update = function (progress)
+    print("progress was changed to " .. progress);
+end
+````
 
 
 
@@ -38,43 +38,53 @@ Sliders can be used to show or get progress.
 ### id
 Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
-	<slider id="my_slider" text="foo" />
+````xml
+<slider id="my_slider" text="foo" />
+````
 
 
 
 ### visibility
 Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
-	<slider visibility="gone" />
+````xml
+<slider visibility="gone" />
+````
 
 
 
 ### text
 Set additional text to be shown in the slider.
 
-	<slider text="hello world" progress="50" progressmax="100" />
+````xml
+<slider text="hello world" progress="50" progressmax="100" />
+````
 
 will show:
-	
-	hello world - 50%
+
+hello world - 50%
 
 If you don't specify a ``text`` only the percentage will be shown:
 
-	50%
+50%
 
 
 
 ### progress
 Set the current progress value of the slider.
 
-	<slider progress="99" />
+````xml
+<slider progress="99" />
+````
 
 
 
 ### progressmax
 Set the maximum progress value of the slider (default ``100``).
 
-	<slider progressmax="200" />
+````xml
+<slider progressmax="200" />
+````
 
 
 
@@ -90,59 +100,59 @@ See the [styling](styling.md) page for more details.
 ### onchange
 Occurs when the slider progress is changing.
 
-	<slider onchange="changing" />
+````xml
+<slider onchange="changing" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.changing = function (value)
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.changing = function (value)
+    ...
+end
+````
 
 
 
 ### ondone
 Occurs when the slider has finished changing value.
 
-	<slider ondone="finish" />
+````xml
+<slider ondone="finish" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.finish = function (value)
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.finish = function (value)
+    ...
+end
+````
 
 
 
 ### ondown
 Occurs when the slider is pressed (i.e. starts sliding).
 
-	<slider ondown="start" />
+````xml
+<slider ondown="start" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.start = function (value)
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.start = function (value)
+    ...
+end
+````
 
 
 
 ### onup
 Occurs when the slider is released (i.e. stops sliding).
 
-	<slider onup="stop" />
+````xml
+<slider onup="stop" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.stop = function (value)
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.stop = function (value)
+    ...
+end
+````
 
 

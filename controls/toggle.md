@@ -20,15 +20,15 @@
 ## Overview
 Toggles are buttons that can have two states (on or off).
 
-	<toggle text="change me!" checked="true" onchange="foobar" />
+````xml
+<toggle text="change me!" checked="true" onchange="foobar" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.changed = function (checked)
-		print("you changed the toggle state to " .. checked);
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.changed = function (checked)
+    print("you changed the toggle state to " .. checked);
+end
+````
 
 
 
@@ -39,49 +39,63 @@ Toggles are buttons that can have two states (on or off).
 ### id
 Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
-	<toggle id="my_toggle" />
+````xml
+<toggle id="my_toggle" />
+````
 
 
 
 ### visibility
 Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
-	<toggle visibility="gone" />
+````xml
+<toggle visibility="gone" />
+````
 
 
 
 ### text
 Set the text to be shown.
 
-	<toggle text="hello world" />
+````xml
+<toggle text="hello world" />
+````
 
 
 
 ### textalign
 Set horizontal text alignment using ``left`` or ``center`` or ``right``.
 
-	<toggle text="foo" textalign="right" />
+````xml
+<toggle text="foo" textalign="right" />
+````
 
 
 
 ### icon
 Set a standard control icon. See [icons list](/res/icons.md) of available icons.
 
-	<toggle icon="select" />
+````xml
+<toggle icon="select" />
+````
 
 
 
 ### image
 Set a custom image to use. Should be a path relative to the layout file.
 
-	<toggle image="img.png" />
+````xml
+<toggle image="img.png" />
+````
 
 
 
 ### checked
 Set whether the toggle is on (``true``) or off (``false``).
 
-	<toggle checked="true" />
+````xml
+<toggle checked="true" />
+````
 
 
 
@@ -97,72 +111,74 @@ See the [styling](styling.md) page for more details.
 ### onchange
 Occurs when the toggle changes state.
 
-	<toggle onchange="changed" />
+````xml
+<toggle onchange="changed" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.changed = function (checked)
-		...
-	end
+````lua
+actions.changed = function (checked)
+    ...
+end
+````
 
 
 
 ### ontap
 Occurs when the control is tapped.
 
-	<toggle text="foo" ontap="foo_tapped" />
+````xml
+<toggle text="foo" ontap="foo_tapped" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.foo_tapped = function ()
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.foo_tapped = function ()
+    ...
+end
+````
 
 
 
 ### onhold
 Occurs when the control is held down.
 
-	<toggle text="bar" onhold="bar_held" />
+````xml
+<toggle text="bar" onhold="bar_held" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.bar_held = function ()
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.bar_held = function ()
+    ...
+end
+````
 
 
 
 ### ondown
 Occurs when the control is pressed down.
 
-	<toggle text="hello" ondown="hello_down" />
+````xml
+<toggle text="hello" ondown="hello_down" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.hello_down = function ()
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.hello_down = function ()
+    ...
+end
+````
 
 
 
 ### onup
 Occurs when the control released.
 
-	<toggle text="world" onup="world_up" />
+````xml
+<toggle text="world" onup="world_up" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.world_up = function ()
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.world_up = function ()
+    ...
+end
+````
 
 

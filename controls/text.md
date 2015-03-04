@@ -20,15 +20,15 @@
 ## Overview
 The ``text`` control is used for editing text input.
 
-	<text hint="enter value" onchange="update" />
+````xml
+<text hint="enter value" onchange="update" />
+````
 
-<ct>layout.xml</ct>
+````lua
+actions.update = function (text)
 
-	actions.update = function (text)
-		
-	end
-
-<ct>remote.lua</ct>
+end
+````
 
 
 
@@ -39,42 +39,54 @@ The ``text`` control is used for editing text input.
 ### id
 Set the ID for this control so that it can be updated later. See [layout library](/libs/layout.md).
 
-	<text id="my_txt" />
+````xml
+<text id="my_txt" />
+````
 
 
 
 ### visibility
 Set the visibility state using ``visible`` or ``invisible`` or ``gone``.
 
-	<text visibility="gone" />
+````xml
+<text visibility="gone" />
+````
 
 
 
 ### text
 Set the current text to be shown.
 
-	<text text="hello world" />
+````xml
+<text text="hello world" />
+````
 
 
 
 ### textalign
 Set horizontal text alignment using ``left`` or ``center`` or ``right``.
 
-	<text textalign="right" />
+````xml
+<text textalign="right" />
+````
 
 
 
 ### hint
 Set the placeholder hint (text to be shown when empty).
 
-	<text hint="enter here" />
+````xml
+<text hint="enter here" />
+````
 
 
 
 ### multiline
 Set whether or not the control accepts multiline input (default ``false``).
 
-	<text multiline="true" />
+````xml
+<text multiline="true" />
+````
 
 
 
@@ -90,27 +102,29 @@ See the [styling](styling.md) page for more details.
 ### onchange
 Occurs when the text changes.
 
-	<text onchange="changed" />
+````xml
+<text onchange="changed" />
+````
 
-<ct>layout.xml</ct>
-
-	actions.changed = function (text)
-		...
-	end
-
-<ct>remote.lua</ct>
+````lua
+actions.changed = function (text)
+    ...
+end
+````
 
 
 
 ### ondone
 Occurs when editing ends.
 
-	<text ondone="done" />
+````xml
+<text ondone="done" />
+````
 
-<ct>layout.xml</ct>
+````lua
+actions.done = function (text)
+    ...
+end
+````
 
-	actions.done = function (text)
-		...
-	end
 
-<ct>remote.lua</ct>
