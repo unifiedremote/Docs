@@ -18,17 +18,3 @@ We welcome all pull-requests if you would like to share your remote, or improve 
 * [Submit User Remote](https://github.com/unifiedremote/User-Remotes)
 
 
-## Latest Update (3.1.0)
-
-* Added async HTTP requests.
-* Added Kodi remote.
-* Fixed Spotify Advanced issues.
-* Fixed foobar200 not always working.
-* Improved manager enable/disable remotes.
-* Fixed PotPlayer for 64-bit.
-* Re-added WMC record button.
-
-
-## Known Issues
-
-* Please report other issues using our [help page](http://www.unifiedremote.com/contact).
