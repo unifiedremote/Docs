@@ -64,15 +64,17 @@ For completely custom themes, create a theme specifier.
 Theme specifiers are formatted like CSS:
 
 ````
-normal:<color>;focus:<color>;active:<color>;color:<color>
+normal:#aaa;focus:#bbb;active:#ccc;color:#abcdef
 ````
 
 The following properties can be used:
 
-* normal (default color)
-* focus (pressed/focused color)
-* active (toggled/activated color)
-* color (text/entry color)
+Property | Use
+-------- | ---
+normal   | default color
+focus    | pressed/focused color
+active   | toggled/activated color
+color    | text/entry color
 
 
 
