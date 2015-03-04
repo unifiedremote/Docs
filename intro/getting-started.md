@@ -4,8 +4,8 @@
 To get started with developing you first need to install the latest version of the Unified Remote Server, and the full version of the app (or at least 1 unlocked remote).
 Note that this site only applies to the V3 server. Older versions of the server use a completely different API for developing remotes.
 
-* <a href="/download">Download Unified Remote</a>
-* <a href="/downloads/custom/template.zip">Download Template</a>
+* <a href="http://www.unifiedremote.com/download">Download Unified Remote</a>
+* <a href="http://www.unifiedremote.com/downloads/custom/template.zip">Download Template</a>
 * <a href="http://www.unifiedremote.com/tutorials/how-to-convert-a-custom-remote-from-v2-to-v3">Convert V2 to V3</a>
 
 ## Examples
