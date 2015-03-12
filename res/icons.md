@@ -60,9 +60,8 @@ mic | ![icon](icons/microphone.png)
 unlock | ![icon](icons/unlock-alt.png)
 eject | ![icon](icons/eject.png)
 lock | ![icon](icons/lock.png)
-sd | ![icon](icons/misc-sd.png)
-hd | ![icon](icons/misc-hd.png)
+sd | SD
+hd | HD
 repeat | ![icon](icons/retweet.png)
 shuffle | ![icon](icons/random.png)
 noicon | ![icon](icons/frown-o.png)
-default | ![icon](icons/frown-o.png)
