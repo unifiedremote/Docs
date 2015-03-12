@@ -1,67 +1,63 @@
-﻿
 # Icons
-
-* <span class="fa fa-chevron-left"></span> LEFT
-* <span class="fa fa-chevron-right"></span> RIGHT
-* <span class="fa fa-chevron-up"></span> UP
-* <span class="fa fa-chevron-down"></span> DOWN
-* <span class="fa fa-play"></span> PLAY
-* <span class="fa fa-pause"></span> PAUSE
-* <span class="fa fa-stop"></span> STOP
-* <span class="fa fa-step-forward"></span> NEXT
-* <span class="fa fa-step-backward"></span> PREVIOUS
-* <span class="fa fa-forward"></span> FF
-* <span class="fa fa-backward"></span> RWD
-* <span class="fa fa-circle"></span> RECORD
-* <span class="fa fa-volume-up"></span> VUP
-* <span class="fa fa-volume-down"></span> VDOWN
-* <span class="fa fa-volume-off"></span> VMUTE
-* <span class="fa fa-mail-reply"></span> BACK
-* <span class="fa fa-eraser"></span> BACKSPACE
-* <span class="fa fa-arrows-alt"></span> FULLSCREEN
-* <span class="fa fa-home"></span> HOME
-* <span class="fa fa-camera"></span> CAMERA
-* <span class="fa fa-list"></span> LIST
-* <span class="fa fa-dot-circle-o"></span> SELECT
-* <span class="fa fa-arrow-down"></span> ARROW-DOWN
-* <span class="fa fa-arrow-left"></span> ARROW-LEFT
-* <span class="fa fa-arrow-right"></span> ARROW-RIGHT
-* <span class="fa fa-arrow-up"></span> ARROW-UP
-* <span class="fa fa-laptop"></span> COMPUTER
-* <span class="fa fa-gear"></span> CONFIG
-* <span class="fa fa-star"></span> FAVORITE
-* <span class="fa fa-file-o"></span> FILE
-* <span class="fa fa-flash"></span> FLASH
-* <span class="fa fa-folder-o"></span> FOLDER
-* <span class="fa fa-folder-open-o"></span> FOLDER-OPEN
-* <span class="fa fa-ellipsis-h"></span> MORE
-* <span class="fa fa-refresh"></span> REFRESH
-* <span class="fa fa-icon-eject"></span> PLAY-PAUSE
-* <span class="fa fa-rotate-left"></span> ROTATE-LEFT
-* <span class="fa fa-rotate-right"></span> ROTATE-RIGHT
-* <span class="fa fa-search-plus"></span> ZOOM-IN
-* <span class="fa fa-search-minus"></span> ZOOM-OUT
-* <span class="fa fa-search"></span> ZOOM-NORMAL
-* <span class="fa fa-times"></span> DOC-CLOSE
-* <span class="fa fa-caret-square-o-left"></span> DOC-LEFT
-* <span class="fa fa-plus"></span> DOC-NEW
-* <span class="fa fa-caret-square-o-right"></span> DOC-RIGHT
-* <span class="fa fa-exchange"></span> DOC-SWITCH
-* <span class="fa fa-desktop"></span> WINDOW
-* <span class="fa fa-search"></span> SEARCH
-* <span class="fa fa-globe"></span> WEB
-* <span class="fa fa-windows"></span> WINDOWS
-* <span class="fa fa-thumbs-o-down"></span> THUMBS-DOWN
-* <span class="fa fa-thumbs-o-up"></span> THUMBS-UP
-* <span class="fa fa-power-off"></span> POWER
-* <span class="fa fa-circle"></span> ON
-* <span class="fa fa-circle-thin"></span> OFF
-* <span class="fa fa-microphone"></span> MIC
-* <span class="fa fa-unlock-alt"></span> UNLOCK
-* <span class="fa fa-eject"></span> EJECT
-* <span class="fa fa-lock"></span> LOCK
-* <span class="fa misc-sd"></span> SD
-* <span class="fa misc-hd"></span> HD
-* <span class="fa fa-retweet"></span> REPEAT
-* <span class="fa fa-random"></span> SHUFFLE
-* <span class="fa fa-frown-o"></span> NO-ICON
+* LEFT: fa_chevron_left
+* RIGHT: fa_chevron_right
+* UP: fa_chevron_up
+* DOWN: fa_chevron_down
+* PLAY: fa_play
+* PAUSE: fa_pause
+* STOP: fa_stop
+* NEXT: fa_step_forward
+* PREVIOUS: fa_step_backward
+* FF: fa_forward
+* RWD: fa_backward
+* RECORD: fa_circle
+* VUP: fa_volume_up
+* VDOWN: fa_volume_down
+* VMUTE: fa_volume_off
+* BACK: fa_mail_reply
+* BACKSPACE: fa_eraser
+* FULLSCREEN: fa_arrows_alt
+* HOME: fa_home
+* CAMERA: fa_camera
+* LIST: fa_list
+* SELECT: fa_dot_circle_o
+* ARROW_DOWN: fa_arrow_down
+* ARROW_LEFT: fa_arrow_left
+* ARROW_RIGHT: fa_arrow_right
+* ARROW_UP: fa_arrow_up
+* COMPUTER: fa_laptop
+* CONFIG: fa_gear
+* FAVORITE: fa_star
+* FILE: fa_file_o
+* FLASH: fa_flash
+* FOLDER: fa_folder_o
+* FOLDER_OPEN: fa_folder_open_o
+* MORE: fa_ellipsis_h
+* REFRESH: fa_refresh
+* PLAY_PAUSE: im_play_pause
+* ROTATE_LEFT: fa_rotate_left
+* ROTATE_RIGHT: fa_rotate_right
+* ZOOM_IN: fa_search_plus
+* ZOOM_OUT: fa_search_minus
+* ZOOM_NORMAL: fa_search
+* DOC_CLOSE: fa_times
+* DOC_LEFT: fa_caret_square_o_left
+* DOC_NEW: fa_plus
+* DOC_RIGHT: fa_caret_square_o_right
+* DOC_SWITCH: fa_exchange
+* WINDOW: fa_desktop
+* SEARCH: fa_search
+* WEB: fa_globe
+* WINDOWS: fa_windows
+* THUMBS_DOWN: fa_thumbs_o_down
+* THUMBS_UP: fa_thumbs_o_up
+* POWER: fa_power_off
+* ON: fa_circle
+* OFF: fa_circle_thin
+* MIC: fa_microphone
+* UNLOCK: fa_unlock_alt
+* EJECT: fa_eject
+* LOCK: fa_lock
+* REPEAT: fa_retweet
+* SHUFFLE: fa_random
+* NO_ICON: fa_frown_o
