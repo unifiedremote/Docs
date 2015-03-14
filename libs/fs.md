@@ -4,7 +4,7 @@
 * [context](#context)
     * [remotefile](#fs_remotefile)
     * [remotedir](#fs_remotedir)
-	* [workingdir](#fs_workingdir)
+    * [workingdir](#fs_workingdir)
 * [dirs](#dirs)
     * [homedir](#fs_homedir)
     * [appdir](#fs_appdir)
@@ -19,17 +19,17 @@
     * [rename](#fs_rename)
     * [delete](#fs_delete)
 * [path](#path)
-	* [parent](#fs_parent)
+    * [parent](#fs_parent)
     * [expand](#fs_expand)
     * [path](#fs_path)
     * [combine](#fs_combine)
     * [absolute](#fs_absolute)
     * [temp](#fs_temp)
 * [tree](#tree)
-    * [roots](#fs_roots)
-    * [files](#fs_files)
-    * [dirs](#fs_dirs)
-    * [list](#fs_list)
+    * [roots](#fs_roots-hidden-)
+    * [files](#fs_files-hidden-)
+    * [dirs](#fs_dirs-hidden-)
+    * [list](#fs_list-hidden-)
 * [create](#create)
     * [createdir](#fs_createdir)
     * [createdirs](#fs_createdirs)
@@ -280,7 +280,7 @@ roots = fs.roots();
 
 
 
-### fs.files( path )
+### fs.files( path, [hidden] )
 Returns an array of file located at the specified ``path``.
 
 ````lua
@@ -294,7 +294,7 @@ end
 
 
 
-### fs.dirs( path )
+### fs.dirs( path, [hidden] )
 Returns an array of sub-directories located at the specified ``path``.
 
 ````lua
@@ -308,7 +308,7 @@ end
 
 
 
-### fs.list( path )
+### fs.list( path, [hidden] )
 Returns an array of sub-directories and files located at the specified ``path``.
 
 ````lua
