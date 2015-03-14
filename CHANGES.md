@@ -1,6 +1,19 @@
 # Changes
+* [Server](#server)
+* [App](#app)
+
 
 ## Server
+
+### 3.2.3
+* Fixed file manager remote showing hidden files.
+* Added fs.list/fs.dirs/fs.files hidden parameter.
+* Added Beamer remotes (http://beamer-app.com/)
+* Fixed crash when logging disabled.
+* Fixed os.start issue.
+* Fixed Spotify Advanced broken due to Spotify update.
+* Added device.server for changing server.
+* Added Server Manager remote.
 
 ### 3.2
 * Fixed server starting as admin after install.
@@ -37,6 +50,12 @@
 * Re-added WMC record button.
 
 ## App
+
+### 3.2
+* Fixed license checking issues.
+* Added WAN field in manual server screen.
+* Added NFC promo code.
+* Fixed WOL not working from Widgets.
 
 ### 3.1
 * Added support for LG IR
