@@ -9,6 +9,7 @@
 * [vibrate](#devicevibrate-)
 * [listen](#devicelisten-)
 * [toast](#devicetoast-message-)
+* [server](#deviceserver-name-)
 	
 
 
@@ -99,6 +100,15 @@ Shows a quick message (toast) on the device.
 
 ````lua
 dev.toast("foobar");
+````
+
+
+
+### device.server( name )
+Connect to the specified server (exact name).
+
+````lua
+dev.server("Home-PC");
 ````
 
 
