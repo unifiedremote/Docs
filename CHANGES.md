@@ -56,6 +56,7 @@
 * Added WAN field in manual server screen.
 * Added NFC promo code.
 * Fixed WOL not working from Widgets.
+* Improved Wear notification behavior.
 
 ### 3.1
 * Added support for LG IR
