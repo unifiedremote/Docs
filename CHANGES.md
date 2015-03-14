@@ -10,9 +10,9 @@
 * Added fs.list/fs.dirs/fs.files hidden parameter.
 * Added Beamer remotes (http://beamer-app.com/)
 * Fixed crash when logging disabled.
-* Fixed os.start issue.
+* Fixed [os.start](/libs/os.md#osstart-command-arg1-arg2--) issue.
 * Fixed Spotify Advanced broken due to Spotify update.
-* Added device.server for changing server.
+* Added [device.server](/libs/device.md#deviceserver-name-) for changing server.
 * Added Server Manager remote.
 
 ### 3.2
