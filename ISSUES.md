@@ -5,7 +5,7 @@ https://www.unifiedremote.com/download
 
 ## Server
 
-* Spotify Advanced broken due to recent Spotify update (Fixed in 3.2.3).
+* Spotify Advanced not working when Spotify window is minimized.
 * Bluetooth not supported on Raspberry Pi yet.
 * Raspberry Pi 2 not supported yet.
 * Changing network manager on Linux causes issues.
