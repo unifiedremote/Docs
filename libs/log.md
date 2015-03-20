@@ -30,7 +30,7 @@ log.trace("something happened");
 Logs an information level message normal logging.
 
 ````lua
-log.trace("something really exciting happened! :D");
+log.info("something really exciting happened! :D");
 ````
 
 
@@ -39,7 +39,7 @@ log.trace("something really exciting happened! :D");
 Logs a warning level message (non-critical important problems).
 
 ````lua
-log.trace("something bad happened, but we can recover :)");
+log.warn("something bad happened, but we can recover :)");
 ````
 
 
@@ -48,7 +48,7 @@ log.trace("something bad happened, but we can recover :)");
 Logs an error level message (critical problems).
 
 ````lua
-log.trace("something really bad happened! >.<");
+log.error("something really bad happened! >.<");
 ````
 
 
