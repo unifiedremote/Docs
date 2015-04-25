@@ -5,6 +5,12 @@
 
 ## Server
 
+### 3.2.5
+* Fixed autostart quotes
+* Fixed GOMPlayer buttons
+* Fixed KMPlayer buttons
+* Tweaked MediaMonkey volume
+
 ### 3.2.3
 * Fixed file manager remote showing hidden files.
 * Added fs.list/fs.dirs/fs.files hidden parameter.
@@ -50,6 +56,15 @@
 * Re-added WMC record button.
 
 ## App
+
+### 3.2.3
+* Fixed IR compatibility
+* Fixed Android Wear voice crash
+* Fixed notification crash
+* Changed Quick Actions prio
+* Fixed various crashes
+* Fixed LG IR popup
+* Added device action for chaning server
 
 ### 3.2
 * Fixed license checking issues.
