@@ -10,6 +10,7 @@
 * Fixed GOMPlayer buttons
 * Fixed KMPlayer buttons
 * Tweaked MediaMonkey volume
+* Added Porthole remote (boyvanamstel)
 
 ### 3.2.3
 * Fixed file manager remote showing hidden files.
