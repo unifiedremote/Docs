@@ -114,7 +114,7 @@ ms.hscroll(-10);
 Returns the current position of the mouse cursor.
 
 ````lua
-x,y = mouse.position();
+x,y = ms.position();
 ````
 
 
