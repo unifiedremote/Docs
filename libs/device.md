@@ -47,7 +47,11 @@ Send an IR code (pronto format) using the device's built-in IR blaster (if avail
 ````lua
 dev.irsend("0000 0000 0000 0000");
 ````
-
+````xml
+<layout>
+	<button text="IR" onclick="@irsend,0000 006b 0026 0000 0154 00aa 0015 0015..." />
+</layout>
+````
 
 
 ### device.keyboard()
