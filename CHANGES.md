@@ -70,6 +70,18 @@
 
 ## App
 
+### Upcoming
+* Added x,y coordinates to ontouchstart and ontouchend
+* [Added interop API](https://github.com/unifiedremote/Intent-Tester)
+
+### 3.3.1
+* Accept space separated IR code list
+* Added option to show Quick Actions on lock screen
+
+### 3.3
+* Rolling out new welcome wizard
+* Ad tests
+
 ### 3.2.3
 * Fixed IR compatibility
 * Fixed Android Wear voice crash
