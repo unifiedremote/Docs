@@ -5,6 +5,18 @@
 
 ## Server
 
+### Upcoming
+* Added device.irsend format parameter
+
+### 3.2.7
+* Fixed keyboard key checking logic
+* Fixed DPI compensation (screen remote black)
+* Fixed accidental manager drag-drop
+
+### 3.2.6
+* Fixed server config not saving
+* Added task list pid
+
 ### 3.2.5
 * Fixed autostart quotes
 * Fixed GOMPlayer buttons
