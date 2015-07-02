@@ -73,6 +73,8 @@
 ### Upcoming
 * Added x,y coordinates to ontouchstart and ontouchend
 * [Added interop API](https://github.com/unifiedremote/Intent-Tester)
+* Demo mode (aka show remotes even without server)
+* Slightly better error messages
 
 ### 3.3.1
 * Accept space separated IR code list
