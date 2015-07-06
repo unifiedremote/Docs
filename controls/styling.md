@@ -17,13 +17,22 @@ Styling properties can be used to change to look of controls.
 <button color="red" />
 ````
 
-Styling is inherited, so setting the style of a container control will set the style of the child controls.
+Styling is inherited from grids to controls, so setting the style of a container control will set the style of the child controls.
 
 ````xml
 <grid color="green" />
     <button text="green!" />
     <button text="also green!" />
 </grid>
+````
+If you like to color a row do the following. 
+````xml
+<row>
+    <grid color="green">
+	    <button text="green!" />
+	    <button text="also green!" />
+    </grid>
+</row>
 ````
 
 
