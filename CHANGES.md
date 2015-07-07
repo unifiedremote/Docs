@@ -70,11 +70,15 @@
 
 ## App
 
-### Upcoming
+### 3.4
+* Fixed widgets failing to load
+* Fixed "package file invalid" error
+* Added "demo mode" when no server added
+* Added Chinese (Simplified) translation
+* Added Portuguese (Brazil) translation
 * Added x,y coordinates to ontouchstart and ontouchend
 * [Added interop API](https://github.com/unifiedremote/Intent-Tester)
-* Demo mode (aka show remotes even without server)
-* Slightly better error messages
+* Various bug fixes
 
 ### 3.3.1
 * Accept space separated IR code list
