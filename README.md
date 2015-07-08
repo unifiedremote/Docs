@@ -50,7 +50,7 @@
 * [Joystick](libs/joystick.md)
 * [Script](libs/script.md)
 * [HTTP](libs/http.md)
-* [Windows](libs/windows.md)
+* [Windows](libs/win.md)
 * [File System (FS)](libs/fs.md)
 * [Processes (PS)](libs/ps.md)
 * [GPIO](libs/gpio.md)
