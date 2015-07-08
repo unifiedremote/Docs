@@ -1,5 +1,5 @@
 ﻿
-# Win
+# Windows
 * [kill](#winkill-process-)
 * [close](#winclose-process-)
 * [quit](#winquit-process-)
