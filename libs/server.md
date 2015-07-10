@@ -78,7 +78,7 @@ end
 
 ````
 
-##### Creating dialog
+##### Creating a dialog
 
 ````lua
 server.update({ 
