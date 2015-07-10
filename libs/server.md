@@ -59,8 +59,10 @@ server.update(
 
 For simple updates, you can use the [layout](#layout.md) helper library instead.
 
-This function should be used to perform advanced updates such as lists.
+This function should be used to perform advanced updates such as lists and dialogs.
 
+
+##### Creating a list
 ````lua
 local items = {
 	{ type = "item", text = "item 1" },
@@ -68,20 +70,29 @@ local items = {
 	{ type = "item", text = "item 3" }
 };
 
-server.update({ id = "list", children = items });
+server.update({ id = "list", ontap = "mydialog", children = items });
+
+actions.mydialog = function(i)
+        -- if (i == 0) then item 1 ...
+end
+
 ````
 
-As well as creating dialogs:
+##### Creating dialog
 
 ````lua
 server.update({ 
 	type = "dialog", 
 	text = "Hello World!", 
+	ontap = "mydialog",
 	children = {
 		{ type = "button", text = "Foo" },
 		{ type = "button", text = "Bar" }
 	}
 });
+
+actions.mydialog = function(i)
+        -- if (i == 0) then Foo! ...
+end
+
 ````
-
-
