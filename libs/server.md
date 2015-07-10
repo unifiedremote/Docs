@@ -71,17 +71,23 @@ local items = {
 server.update({ id = "list", children = items });
 ````
 
-As well as creating dialogs:
+##### Creating dialog
 
 ````lua
 server.update({ 
 	type = "dialog", 
 	text = "Hello World!", 
+	ontap = "mydialog",
 	children = {
 		{ type = "button", text = "Foo" },
 		{ type = "button", text = "Bar" }
 	}
 });
+
+actions.mydialog = function(i)
+        -- if (i == 0) then Foo! ...
+end
+
 ````
 
 
