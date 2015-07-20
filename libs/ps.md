@@ -1,5 +1,5 @@
 ﻿
-# ps
+# Processes (PS)
 * [run](#ps_run)
 * [list](#ps_list)
 * [usage](#ps_usage)
