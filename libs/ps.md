@@ -6,22 +6,22 @@
 	
 
 
-## ps
+## `ps` library
 The ``ps`` library provides helper functions for processes.
 
 	local ps = libs.ps;
 
 
 
-### ps.run( )
+### ps.run()
 Not implemented yet.
 
 
-### ps.list( )
+### ps.list()
 Not implemented yet.
 
 
-### ps.usage( )
+### ps.usage()
 Not implemented yet.
 
 
