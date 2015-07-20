@@ -1,15 +1,15 @@
 ﻿
 # FS
-* [fs](#fs-1)
-* [context](#context)
+* [fs library](#fs-1)
+* [Context](#context)
     * [remotefile](#fs_remotefile)
     * [remotedir](#fs_remotedir)
     * [workingdir](#fs_workingdir)
-* [dirs](#dirs)
+* [Directories](#dirs)
     * [homedir](#fs_homedir)
     * [appdir](#fs_appdir)
     * [special](#fs_special)
-* [common](#common)
+* [Common](#common)
     * [name](#fs_name)
     * [fullname](#fs_fullname)
     * [extension](#fs_extension)
@@ -18,30 +18,30 @@
     * [move](#fs_move)
     * [rename](#fs_rename)
     * [delete](#fs_delete)
-* [path](#path)
+* [Path](#path)
     * [parent](#fs_parent)
     * [expand](#fs_expand)
     * [path](#fs_path)
     * [combine](#fs_combine)
     * [absolute](#fs_absolute)
     * [temp](#fs_temp)
-* [tree](#tree)
+* [Tree](#tree)
     * [roots](#fs_roots-hidden-)
     * [files](#fs_files-hidden-)
     * [dirs](#fs_dirs-hidden-)
     * [list](#fs_list-hidden-)
-* [create](#create)
+* [Create](#create)
     * [createdir](#fs_createdir)
     * [createdirs](#fs_createdirs)
     * [createfile](#fs_createfile)
-* [read/write](#readwrite)
+* [Read & Write](#readwrite)
     * [write](#fs_write)
     * [writelines](#fs_writelines)
     * [append](#fs_append)
     * [appendlines](#fs_appendlines)
     * [read](#fs_read)
     * [readlines](#fs_readlines)
-* [attributes](#attributes)
+* [Attributes](#attributes)
     * [isfile](#fs_isfile)
     * [isdir](#fs_isdir)
     * [ishidden](#fs_ishidden)
@@ -51,7 +51,7 @@
 
 
 
-## fs
+## `fs` library
 The ``fs`` library provides essential file system functiuons for files and folders.
 
 ````lua
@@ -60,7 +60,7 @@ local fs = require("fs");
 
 
 
-## context
+## Context
 
 
 
@@ -91,7 +91,7 @@ path = fs.workingdir();
 
 
 
-## dirs
+## Directories
 
 
 
@@ -125,7 +125,7 @@ Refer to [MSDN](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762494
 
 
 
-## common
+## Common
 
 
 
@@ -206,7 +206,7 @@ fs.delete("c:\\temp\\", true);
 
 
 
-## path
+## Path
 
 
 
@@ -267,7 +267,7 @@ path = fs.temp();
 
 
 
-## tree
+## Tree
 
 
 
@@ -322,7 +322,7 @@ end
 
 
 
-## create
+## Create
 
 
 
@@ -356,7 +356,7 @@ fs.createdirs("c:\\temp\\newfile.txt");
 
 
 
-## read/write
+## Read & Write
 
 
 
@@ -414,7 +414,7 @@ lines = fs.readlines("c:\\temp\\log.txt");
 
 
 
-## attributes
+## Attributes
 
 
 
