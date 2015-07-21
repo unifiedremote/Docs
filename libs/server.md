@@ -9,7 +9,7 @@
 
 
 ## server
-The ``server`` library provides helper functions for interacting with the server and othe rremotes.
+The ``server`` library provides helper functions for interacting with the server and other remotes.
 
 ````lua
 local server = require("server");
