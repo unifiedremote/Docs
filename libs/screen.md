@@ -7,7 +7,7 @@
 
 
 
-## screen
+## The screen library
 The ``screen`` library provides a way of easily capturing screenshots.
 
 ````lua
