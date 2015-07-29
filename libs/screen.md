@@ -21,7 +21,12 @@ local screen = require("screen").new();
 Capture the entire screen area.
 
 ````lua
-x,y,w,h,img = screen.capture();
+res = screen.capture();
+local x = res.x;
+local y = res.y;
+local w = res.w;
+local h = res.h;
+local image = res.image;
 ````
 
 
@@ -30,14 +35,14 @@ x,y,w,h,img = screen.capture();
 Capture the specified screen area.
 
 ````lua
-x,y,w,h,img = screen.capture(0, 0, 400, 400);
+res = screen.capture(0, 0, 400, 400);
 ````
 
 Optionally it can return only the sub-area that has changed since the previous call. If no pixels have changed since the previous call then the image will be ``nil``. The returned coordinates and size will correspond to the sub-area that has actually changed.
 
 ````lua
-x,y,w,h,img = screen.capture(0, 0, 400, 400, true);
-if (img) then
+res = screen.capture(0, 0, 400, 400, true);
+if (res.image) then
   print("area changed");
 else
   print("area same");
