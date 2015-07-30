@@ -96,3 +96,21 @@ actions.mydialog = function(i)
 end
 
 ````
+
+##### Creating a input dialog
+
+````lua
+server.update({
+	id = "myinputdialog",
+	type = "input",
+	title = "Write something!", 
+	ontap = "myinputdialog_done"
+});
+
+actions.myinputdialog_done = function(txt)
+        if (is_valid(txt)) then 
+		fancy_stuff(txt) ...
+	end
+end
+
+````
