@@ -59,4 +59,4 @@ server.update(
 
 For simple updates, you can use the [layout](#layout.md) helper library instead.
 
-This function should be used to perform advanced updates such as lists and dialogs. See [../controls/dialogs](here).
+This function should be used to perform advanced updates such as lists and dialogs. See [here](../controls/dialogs).
