@@ -71,6 +71,23 @@ Set horizontal text alignment using ``left`` or ``center`` or ``right``.
 ````
 
 
+### icon
+Set a standard control icon. See [icons list](/res/icons.md) of available icons.
+
+````xml
+<button icon="select" />
+````
+
+
+
+### image
+Set a custom image to use. Should be an absolute path or relative to the layout file.
+
+````xml
+<button image="img.png" />
+````
+
+
 
 ## Styling
 See the [styling](styling.md) page for more details.
