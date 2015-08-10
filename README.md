@@ -35,6 +35,7 @@
 * [List](controls/list.md)
 * [Text](controls/text.md)
 * [Touch](controls/touch.md)
+* [Dialogs](controls/dialogs.md)
 
 ## [Libraries](libs/)
 * [Lua](libs/lua.md)
