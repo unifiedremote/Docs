@@ -7,6 +7,7 @@
 	* [text](#text)
 	* [textalign](#textalign)
 	* [icon](#icon)
+	* [scale](#scale)
 	* [image](#image)
 * [Styling](#styling)
 * [Events](#events)
@@ -80,12 +81,20 @@ Set a standard control icon. See [icons list](/res/icons.md) of available icons.
 ````
 
 
-
 ### image
 Set a custom image to use. Should be an absolute path or relative to the layout file.
 
 ````xml
 <button image="img.png" />
+````
+
+
+
+### scale
+Sets the scaling used for images. Values: ``icon`` (default), ``fill``, ``fit``, or ``native``.
+
+````xml
+<button image="img.png" scale="fit" />
 ````
 
 
