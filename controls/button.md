@@ -97,6 +97,7 @@ Sets the scaling used for images. Values: ``icon`` (default), ``fill``, ``fit``,
 <button image="img.png" scale="fit" />
 ````
 
+<img src="http://s3.amazonaws.com/unifiedremote-community-uploads/6774bef3-d6db-453f-8f10-16af2fdd3d29.png" width="200" />
 
 
 ## Styling
