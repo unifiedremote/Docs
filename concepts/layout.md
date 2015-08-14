@@ -37,3 +37,6 @@ server (for example Wake On LAN).
     <!-- Inline Device Action -->
     <button text="foo" ontap="@wol" />
     
+    <!-- Inline Send IR -->
+    <button text="Volume Up" ontap="@irsend,0000 0000 0000 ... 0000 0000 0000" />
+    
