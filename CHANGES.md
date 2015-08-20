@@ -5,9 +5,6 @@
 
 ## Server
 
-### Upcoming
-* Added device.irsend format parameter
-
 ### 3.3.0
 * New automatic updates for Windows
 * New updates UI for Mac
@@ -76,6 +73,17 @@
 * Re-added WMC record button.
 
 ## App
+
+### 3.4.1
+• Added scaling to image buttons
+• Improved IR performance
+• Fixed crash in select remotes
+• Fixed edit server bar not visible
+• Fixed multitouch not working
+• Fixed touch not working in tabs
+• Fixed localization texts
+• Fixed row colors in remotes
+• Various bug fixes
 
 ### 3.4
 * Fixed widgets failing to load
