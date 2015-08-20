@@ -8,6 +8,13 @@
 ### Upcoming
 * Added device.irsend format parameter
 
+### 3.3.0
+* New automatic updates for Windows
+* New updates UI for Mac
+* Fixed slow start on Mac
+* Fixed crash when remote has invalid version
+* Fixed server not stopping on Linux
+
 ### 3.2.7
 * Fixed keyboard key checking logic
 * Fixed DPI compensation (screen remote black)
