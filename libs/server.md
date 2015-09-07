@@ -40,7 +40,7 @@ Tells the server to run an action for the specified remote.
 
 ````lua
 server.run("Unified.Chrome", "back");
-server.run("Unified.Command", execute", "echo foobar");
+server.run("Unified.Command", "execute", "echo foobar");
 ````
 
 The server will automatically load (create) the remote.
