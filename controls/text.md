@@ -10,8 +10,8 @@
 	* [image](#image)
 * [Styling](#styling)
 * [Events](#events)
-	* [onchange](#ontap)
-	* [ondone](#onhold)
+	* [onchange](#onchange)
+	* [ondone](#ondone)
 
 
 ## Overview
