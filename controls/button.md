@@ -140,7 +140,7 @@ end
 
 
 ### ondown
-Occurs when the button is released.
+Occurs when the button is pressed.
 
 ````xml
 <button text="hello" ondown="hello_down" />
@@ -155,7 +155,7 @@ end
 
 
 ### onup
-Occurs when the button pressed down.
+Occurs when the button released.
 
 ````xml
 <button text="world" onup="world_up" />
