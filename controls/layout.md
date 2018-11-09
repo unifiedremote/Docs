@@ -39,7 +39,7 @@ Lock the orientation of the layout using ``portrait`` or ``landscape``.
 Set the scroll mode using ``none``, ``vertical``, ``horizontal``, and ``both``.
 
 ````xml
-<layout scroll="veritcal">
+<layout scroll="vertical">
 
 </layout>
 ````
