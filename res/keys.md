@@ -42,7 +42,7 @@
 	insert
 	menu
 	pause
-	f1-f24
+	f1-f12
 	shift
 	leftshift lshift
 	rightshift rshift
